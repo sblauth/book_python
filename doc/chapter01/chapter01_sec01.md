@@ -54,17 +54,18 @@ den Blick schweifen lassen? Nennen Sie mindestens fünf Hardware-Komponenten.
 ```{admonition} Lösung
 :class: miniexercise, toggle
 Beispiele für Hardware sind:
-* Prozessor (CPU = central processing unit = zentrale Recheneinheit zur Verarbeitung von Befehlen)
-* Grafikprozessor (GPU = graphics processing unit = auf die Berechnung von Grafiken spezialisierter Prozessor)
-* interner Speicher: 
-    * RAM (Random Access Memory: Arbeitsspeicher für den Prozessor)
-    * ROM (Read Only Memory: dient zum Start des Computers)
+* Eingabegeräte wie Tastatur, Maus, Touchpad, Webcam, Mikrofon, Scanner, Grafiktablett
+* Ausgabegeräte wie Monitor, Display, Lautsprecher, Beamer, Drucker
 * externer Speicher: 
     * magnetische Speichermedien: Festplatte (HDD)
     * optische Speichermedien: CD, DVD, BlueRay
-    * Flash-Speicher: SSD, USB-Stick, SD-Karte 
-* Eingabegeräte wie Tastatur, Maus, Touchpad, Webcam, Mikrofon, Scanner, Grafiktablett
-* Ausgabegeräte wie Monitor, Display, Lautsprecher, Beamer, Drucker
+    * Flash-Speicher: SSD, USB-Stick, SD-Karte
+* interner Speicher: 
+    * RAM (Random Access Memory: Arbeitsspeicher für den Prozessor)
+    * ROM (Read Only Memory: dient zum Start des Computers)
+* Prozessor (CPU = central processing unit = zentrale Recheneinheit zur Verarbeitung von Befehlen)
+* Grafikprozessor (GPU = graphics processing unit = auf die Berechnung von Grafiken spezialisierter Prozessor)
+* Mainboard (die zentrale Platine eines Computers, auf der die anderen Bauteile des Computers montiert sind)
 ```
 
 Bei Wikipedia können Sie den Begriff
@@ -102,13 +103,15 @@ Nennen Sie eine Software. Gibt es eine Dokumentation dazu? Welche Daten werden m
 :class: miniexercise, toggle
 Bekannte Softwaretools zur Erstellung von Folien für eine Präsentation sind
 * Microsoft Powerpoint (vor allem für das Windows-Betriebssystem, auch MacOS)
-* LibreOffice Impress (kostenlos, alle Betriebssysteme, insbesondere auch Linux)
 * Keynote (MacOS)
+* LibreOffice Impress (kostenlos, alle Betriebssysteme, insbesondere auch Linux)
+
 
 Die Dokumentation der jeweiligen Programme findet sich im Internet:
-* [Dokumentation Powerpoint](https://support.microsoft.com/de-de/powerpoint), 
-* [Dokumentation LibreOffice Impress](https://de.libreoffice.org/discover/impress/), 
+* [Dokumentation Powerpoint](https://support.microsoft.com/de-de/powerpoint),
 * [Dokumentation Keynote](https://support.apple.com/de-de/keynote)). 
+* [Dokumentation LibreOffice Impress](https://de.libreoffice.org/discover/impress/), 
+
 
 Da LibreOffice ein Open-Source-Projekt von Freiwilligen ist, können Sie den Programmcode und die technische Dokumentation auf den [LibreOffice → Developer](https://www.libreoffice.org/community/developers/) Seiten einsehen.
 
@@ -170,11 +173,11 @@ Bibliotheken zusammen mit ihrem Einsatzzweck.
 ```{admonition} Lösung
 :class: miniexercise, toggle
 Bekannte Bibliotheken sind
-* PyTorch, Scikit-Learn, TensorFlow: maschinelles Lernen
 * NumPy: numerisches Python (Matrizen, lineare Gleichungssysteme, ...)
-* Pandas: Tabellenverarbeitung für Python
-* Matplotlib: Visualisierung von Daten
+* Matplotlib, Seaborn: Visualisierung von Daten
 * SciPy: wissenschaftliches Rechnen mit Python (Regression, Interpolation, Differentialgleichungen)
+* Pandas: Tabellenverarbeitung für Python
+* PyTorch, Scikit-Learn, TensorFlow: maschinelles Lernen
 ```
 
 
