@@ -103,7 +103,7 @@ Listen Sie die Details auf, die dem obigen Rezept des Rosenkohl-Auflaufs zugefü
 
 Auf die Idee, einen Algorithmus mit dem Kochen zu vergleichen, werden wir in
 spätere Kapiteln noch zurückkehren. Als nächstes beschäftigen wir uns damit, wie
-den Computer Anweisungen erteilt werden.
+dem Computer Anweisungen erteilt werden.
 
 ## Programmiersprachen 
 
@@ -141,7 +141,7 @@ print('Hallo Welt')
 ```
 
 Heute werden nur noch die sogenannten **höheren Programmiersprachen** verwendet
-(wie Python, MATLAB oder C++), die für Menschen leichter verständlich sind.
+(wie Python, C++ oder MATLAB), die für Menschen leichter verständlich sind.
 Dafür müssen dann Programme, die in höheren Programmiersprachen geschrieben
 sind, in **Maschinensprache** übersetzt werden. Verschiedene Programmiersprachen
 verwenden dazu unterschiedliche Prinzipien. Die beiden wichtigsten Vertreter
@@ -176,7 +176,6 @@ Recherchieren Sie im Internet. Sind die folgenden Programmiersprachen kompiliert
 
 ```{admonition} Lösung
 :class: miniexercise, toggle
-Recherchieren Sie im Internet. Sind die folgenden Programmiersprachen kompilierte oder interpretierte Programmiersprachen?
 * C bzw. C++ --> kompiliert
 * Java --> kompiliert (wird manchmal auch zu den interpretierten Sprachen gezählt, weil der kompilierte Bytecode anschließend von der Java Virtual Machine interpretiert wird und nicht vom Betriebsystem direkt ausgeführt wird)
 * C# --> kompliliert
@@ -206,11 +205,11 @@ Was ist überhaupt Python? Wikipedia erklärt Python folgendermaßen:
   den Anspruch, einen gut lesbaren, knappen Programmierstil zu fördern. So
   werden beispielsweise Blöcke nicht durch geschweifte Klammern, sondern durch
   Einrückungen strukturiert." 
-  (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Python_(Programmiersprache))
+  (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Python_(Programmiersprache)))
 
 In dieser Vorlesung verwenden wir Python als Programmiersprache, da Python viele
-Vorteile bietet, die das Erlernen der Programmierung erleichtern und
-(hoffentlich Spaß machen):
+Vorteile bietet, die das Erlernen der Programmierung erleichtern (und
+hoffentlich Spaß machen):
 
 1. Einfache Syntax: Python hat eine klare und leicht verständliche Syntax, die
    es leicht macht, die Grundlagen der Programmierung zu erlernen. Die Syntax
@@ -218,8 +217,8 @@ Vorteile bietet, die das Erlernen der Programmierung erleichtern und
    erleichtert.
 2. Vielseitigkeit: Python ist eine sehr vielseitige Programmiersprache, die in
    vielen verschiedenen Bereichen eingesetzt werden kann. Sie wird oft für
-   Datenanalyse, künstliche Intelligenz, Webentwicklung und wissenschaftliches
-   Rechnen verwendet.
+   Datenanalyse, wissenschaftliches Rechnen, Webentwicklung und künstliche 
+   Intelligenz verwendet.
 3. Große Community: Python hat eine große Community von Entwicklern, die aktiv
    an der Weiterentwicklung der Sprache und an der Bereitstellung von
    Hilfestellung und Ressourcen für Anfänger beteiligt sind. Es gibt viele
@@ -232,7 +231,9 @@ Vorteile bietet, die das Erlernen der Programmierung erleichtern und
    Windows, Mac und Linux ausgeführt werden. Dies macht es für Anfänger leicht,
    die Sprache auf ihrem bevorzugten Betriebssystem zu erlernen.
    
-Ansonsten ist es ein wenig wie mit dem Erlernen einer Fremdsprache. Die erste
-Fremdsprache ist die schwerste! Sprich, wenn Sie eine Programmiersprache erlernt
+Ansonsten ist es ein wenig wie mit dem Erlernen einer Fremdsprache. Beim
+Programmieren gibt es aber einen Unterschied. Sobald Sie Ihre erste 
+Programmiersprache erlernt haben, ist es sehr viel einfacher, die nächste zu lernen.
+Insbesondere gilt: Wenn Sie eine Programmiersprache erlernt
 haben und wissen, wie ein komplexes Problem in Teilaufgaben zerlegt wird, können
-Sie das schnell auf andere Programmiersprachen übertragen.
+Sie das dann auch schnell auf andere Programmiersprachen übertragen.

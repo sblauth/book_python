@@ -16,10 +16,10 @@ kernelspec:
 
 # 1.1 Hardware und Software
 
-Bevor es mit der Programmierung in Python losgeht, machen wir uns erstmal mit
+Bevor es mit der Programmierung in Python losgeht, machen wir uns zuerst mit
 ein paar grundlegenden Begriffen der Informatik vertraut. In diesem Kapitel geht
-es zunächst darum, was alles zu Hardware und was zu Software zählt. Darüber
-hinaus lernen wir die Einteilung der Computerprogramme in die verschiedenen
+es zunächst darum, was Hard- und was Software ist und was dazu zählt. Darüber
+hinaus lernen wir die Einteilung von Computerprogrammen in verschiedene
 Software-Kategorien wie Betriebssystem, Anwendungssoftware und Bibliothek
 kennen.
 
@@ -109,7 +109,7 @@ Bekannte Softwaretools zur Erstellung von Folien für eine Präsentation sind
 
 Die Dokumentation der jeweiligen Programme findet sich im Internet:
 * [Dokumentation Powerpoint](https://support.microsoft.com/de-de/powerpoint),
-* [Dokumentation Keynote](https://support.apple.com/de-de/keynote)). 
+* [Dokumentation Keynote](https://support.apple.com/de-de/keynote). 
 * [Dokumentation LibreOffice Impress](https://de.libreoffice.org/discover/impress/), 
 
 
@@ -136,7 +136,7 @@ Wikipedia folgende Aufgaben:
   internen Speicherplatzes für Anwendungen; Verwaltung und Betrieb der
   angeschlossenen Geräte; Schutzfunktionen z. B. durch Zugriffsbeschränkungen."
 
-Bekannte Betriebssysteme für Computer sind Linux, MacOS und Windows. Bei
+Bekannte Betriebssysteme für Computer sind Windows, MacOS und Linux. Bei
 Smartphones und Tablets kommen häufig die Betriebssysteme Android und iOS zum
 Einsatz.
 

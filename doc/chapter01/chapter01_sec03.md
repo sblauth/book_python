@@ -30,7 +30,8 @@ Entwicklung mit Python nützlich sein können.
 
 ## Warum Anaconda?
 
-Anaconda ist eine Python-Distribution, die von der Firma Anaconda, Inc.
+Anaconda ist eine Python-Distribution, die von der Firma 
+[Anaconda, Inc.](https://www.anaconda.com/about-us) 
 entwickelt wird. Sie ist eine kostenlose Open-Source-Plattform, die es
 Python-Entwickler:innen ermöglicht, Python, R und andere Programmiersprachen
 sowie zahlreiche Bibliotheken und Tools auf einfache Weise zu installieren, zu
@@ -45,10 +46,11 @@ Python und seine Bibliotheken zu verwalten und zu verwenden.
 ## Installation Anaconda und Start JupyterLab für Jupyter Notebooks
 
 Hier ist eine Schritt-für-Schritt-Anleitung zum Installieren von Python mit der
-Distribution Anaconda für Windows und MacOS:
+Distribution Anaconda für Windows und MacOS. Falls Sie Linux verwenden sollten, 
+folgen Sie [dieser Anleitung](https://docs.anaconda.com/free/anaconda/install/linux/).
 
 1. Öffnen Sie die offizielle Anaconda-Website unter
-   https://www.anaconda.com/products/individual und laden Sie die neueste
+   https://www.anaconda.com/download/success und laden Sie die neueste
    Version von Anaconda für Ihr Betriebssystem herunter.
 2. Führen Sie die Installationsdatei aus und folgen Sie den Anweisungen auf dem
    Bildschirm. Wählen Sie ggf. ein freies Installationsverzeichnis und stellen
@@ -77,11 +79,11 @@ interaktiven digitalen Notizbuch zusammenzuführen. Sie sind eine der
 bekanntesten Anwendungen in der Data Science-Community und werden oft zur
 Datenanalyse, maschinellem Lernen und Visualisierung eingesetzt.
 
-Ein Jupyter Notebook besteht aus einer Abfolge von Zellen, in denen Text, Code
+Ein Jupyter Notebooks besteht aus einer Abfolge von Zellen, in denen Text, Code
 und Visualisierungen eingebettet werden. Die Zellen können entweder in der
 Programmiersprache Python oder in einer Reihe anderer Programmiersprachen wie R,
 Julia oder JavaScript geschrieben werden. Erkennbar sind Jupyter Notebooks an
-der Dateiendung `ipynb`.
+der Dateiendung `.ipynb`, was für **i**nteractive **py**thon **n**ote**b**ook steht.
 
 Die Kombination von Text, Code und Visualisierungen macht Jupyter Notebooks zu
 einem leistungsstarken Werkzeug für die Datenanalyse. Daten können direkt in den
@@ -119,7 +121,8 @@ Sternchen ** vor und hinter das Wort gesetzt, also ich bin `**fett**` gedruckt.
 In Code-Zellen (siehe Fig. 3, Schritt 2 oder 3) können Sie direkt Python-Code
 eingeben. Sie erkennen eine Code-Zelle daran, dass "In" für Input daneben steht.
 Eine Code-Zelle wird ausgeführt, indem Sie auf "Run" klicken (siehe Fig. 3,
-Schritt 4). Danach erscheint die Ausgabe, die der Python-Interpreter ggf.
+Schritt 4) oder durch das Tastaturkürzel Shift + Enter. Danach erscheint die 
+Ausgabe, die der Python-Interpreter ggf.
 produziert (siehe Fig. 3, Schritt 5). Wird ein Ergebnis berechnet oder ein Wert
 zurückgegeben, so ist das an der Bezeichnung "Out" wie Output erkennbar.
 

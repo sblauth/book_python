@@ -25,7 +25,7 @@ Sie es mit der Software JupyterLab.
 
 ```{admonition} Übung 1.2
 :class: miniexercise 
-Benutzen Sie Python als Taschenrechner. Fügen Sie dazu diesem Jupyter Notebook eine Code-Zelle hinzu und lassen Sie die folgenden Ausdrücke berechnen:
+Benutzen Sie Python als Taschenrechner. Fügen Sie dazu diesem Jupyter Notebook eine Code-Zelle hinzu und lassen Sie die folgenden Ausdrücke berechnen, indem Sie diese in eine Code-Zelle eingeben:
 * 2 + 3
 * 2 - 3
 * 4 * 5

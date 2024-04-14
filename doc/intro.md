@@ -1,8 +1,8 @@
 # Willkommen zum interaktiven Vorlesungsskript Python
 
 Verfasst von [Sebastian Blauth](https://sblauth.github.io/), basierend auf dem Vorlesungsskript von [Simone
-Gramsch](https://www.frankfurt-university.de/de/erweiterungen/ansprechpartner/detail/simone-gramsch-1/?no_cache=1)
-// Powered by [Jupyter Book](https://jupyterbook.org/)
+Gramsch](https://www.frankfurt-university.de/de/erweiterungen/ansprechpartner/detail/simone-gramsch-1/?no_cache=1)\
+Powered by [Jupyter Book](https://jupyterbook.org/)
 
 Die Digitalisierung in den Ingenieurwissenschaften nimmt immer stärker zu. Daher
 bietet dieser Python-Kurs zukünftigen Ingenieur:innen einen Einstieg in die
