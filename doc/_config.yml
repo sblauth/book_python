@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Python für Studierende der Ingenieurwissenschaften
-author: Simone Gramsch
+author: Sebastian Blauth (basierend auf dem Skript von Simone Gramsch)
 logo: pics/book_logo.png
 
 # Force re-execution of notebooks on each build.
@@ -21,7 +21,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/gramschs/book_python # Online location of your book
+  url: https://github.com/sblauth/book_python # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 

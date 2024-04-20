@@ -13,11 +13,11 @@ kernelspec:
   name: python3
 ---
 
-# 2.3 Eingabe (input) und Zuweisungsoperator
+# 2.3 Eingabe mit input() und Zuweisungsoperator
 
 Ohne die Eingabe von Daten sind Apps wertlos. In diesem Kapitel beschäftigen wir
 uns daher einer direkten Eingabemöglichkeit in Python und lernen dazu die
-input()-Funktion kennen. Um die input()-Funktion korrekt zu nutzen beschäftigen
+**input()**-Funktion kennen. Um die `input()` Funktion korrekt zu nutzen, beschäftigen
 wir uns mit Umwandlungen von Datentypen in andere Datentypen. Zuletzt gehen wir
 noch auf die Stolperfalle ein, dass der Zuweisungsoperator `=` nicht die
 mathematische Gleichheit überprüft.
@@ -66,8 +66,8 @@ Eingabe.
 
 Die einfachste und häufigste **Eingabe** erfolgt über die Tastatur. Die Funktion
 `input()` stoppt das laufende Skript und erwartet eine Eingabe über die
-Tastatur. Dabei wird der Text angezeigt, der zwischen den einfachen Hochkommata
-steht. Bei Python wird die Eingabe als String interpretiert. Die Eingabe wird
+Tastatur. Dabei wird am Bildschirm der Text angezeigt, welcher der `input()` Funktion als 
+Argument übergeben wird, angezeigt. Bei Python wird die Eingabe als String interpretiert. Die Eingabe wird
 mit der Taste Return/Enter abgeschlossen. Probieren wir es aus:
 
 ```python
@@ -79,23 +79,24 @@ wurde diese Eingabe nicht. Es passierte einfach nichts. Um die Eingabe
 verarbeiten zu können, speichern wir sie zunächst in einer Variablen ab. 
 
 ```python
-x = input('Bitte geben Sie Ihren Namen ein: ')
+name = input('Bitte geben Sie Ihren Namen ein: ')
 ```
 
-Jetzt haben wir zwar den Namen in einer Variable gespeichert, aber so richtig
+Jetzt haben wir zwar den Namen in der Variable `name` abgespeichert, aber so richtig
 passiert ist immer noch nichts. Jetzt wäre es noch schön, wenn wir dem Benutzer
 oder der Benutzerin unseres Skripts begrüßen können und einen entsprechenden Text
-anzeigen lassen können. Dazu verwenden wir erneut die `print()`-Funktion. 
+anzeigen lassen können. Dazu verwenden wir erneut die `print()` Funktion. 
 
 ```python
 print('Hallo')
+print(name)
 ```
 Jetzt können wir alles zusammensetzen.
 
 ```python
-x = input('Bitte geben Sie Ihren Namen ein: ')
+name = input('Bitte geben Sie Ihren Namen ein: ')
 print('Hallo')
-print(x)
+print(name)
 ```
 
 Kopieren Sie diesen Code in die nächste Code-Zelle und probieren Sie es aus!
@@ -105,33 +106,33 @@ Kopieren Sie diesen Code in die nächste Code-Zelle und probieren Sie es aus!
 
 ```
 
-In dem folgenden Video sehen Sie weitere Erläuterungen zur input()-Funktion.
+In dem folgenden Video sehen Sie weitere Erläuterungen zur `input()` Funktion.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I9h1c-121Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Umwandlung von Datentypen
 
-Die input()-Funktion hat eine Einschränkung. Bei ihrer Einführung wurde in einem
-Nebensatz erwähnt, dass die input()-Funktion Strings zurückgibt. Das ist eine
+Die `input()` Funktion hat eine Einschränkung. Bei ihrer Einführung wurde in einem
+Nebensatz erwähnt, dass die `input()` Funktion Strings zurückgibt. Das ist eine
 häufige Fehlerquelle in der Programmierung, wenn man nach Zahlen fragt.
 Glücklicherweise gibt es dafür eine einfache Lösung. Wir können einen String in
 einen Integer oder Float verwandeln, indem wir die Funktionen `int()` oder
-`float()` benutzen. Wenn also nach einer Zahl per input()-Funktion gefrgt werden
+`float()` benutzen. Wenn also nach einer Zahl per `input()` Funktion gefrgt werden
 soll wie beispielsweise dem Alter einer Person, so lautet der Code wie folgt:
 
 ```python
-x = int( input('Wie alt sind Sie?) )
+alter = int( input('Wie alt sind Sie (in Jahren)?) )
 print('Alter: ')
-print(x)
+print(alter)
 ```
 
 Und soll es eine Fließkommazahl werden, so können wir folgendermaßen den
 Python-Interpreter fragen lassen:
 
 ```python
-x = int( input('Wie groß sind Sie gemessen in Metern?) )
+groesse = float( input('Wie groß sind Sie gemessen in Metern?) )
 print('Größe in m')
-print(x)
+print(groesse)
 ```
 
 Probieren Sie gerne beide Varianten in der nächsten Code-Zelle aus.
@@ -150,10 +151,9 @@ Details in diesem Video:
 ## Zuweisungsoperator
 
 Wichtig ist, dass das `=` in der Informatik eine andere Bedeutung hat als in der
-Mathematik. = meint nicht das Gleichheitszeichen, sondern den sogenannten
-**Zuweisungsoperator**. Das ist in der Programmierung ein Kommando, das eine
-Schublade befüllt oder technischer ausgedrückt, ein Objekt einer Variable
-zuweist.
+Mathematik. Der Operator `=` meint nicht das Gleichheitszeichen, sondern den sogenannten
+**Zuweisungsoperator**. Das ist in der Programmierung ein Kommando, das einer Variable ein Objekt 
+zuordnet, also quasi eine Schublade befüllt.
 
 Sehr häufig findet man Code wie
 
@@ -165,8 +165,8 @@ Würden wir dies als Gleichung lesen, wie wir es aus der Mathematik gewohnt sind
 also $x = x+1$, könnten wir $x$ auf beiden Seiten subtrahieren und erhalten
 $0=1$. Wir wissen, dass dies nicht wahr ist, also stimmt hier etwas nicht.
 
-In Python sind "Gleichungen" keine mathematischen Gleichungen, sondern
-Zuweisungen. "=" ist kein Gleichheitszeichen im mathematischen Sinne, sondern
+In Python sind "Gleichungen" (mit dem Operator `=`) keine mathematischen Gleichungen, sondern
+Zuweisungen. Der Operator `=` ist kein Gleichheitszeichen im mathematischen Sinne, sondern
 eine Zuweisung. Die Zuweisung muss immer in der folgenden Weise zweistufig
 gelesen werden:
 
@@ -175,11 +175,11 @@ gelesen werden:
    Variablennamen zu.
 
 Wir probieren eine solche Zuweisung in der folgenden Code-Zelle aus und benutzen
-auch gleich die `print()`-Funktion, um den Wert der Variablen `x` ausgeben zu
+auch gleich die `print()` Funktion, um den Wert der Variablen `x` ausgeben zu
 lassen:
 
 ```{code-cell} ipython3
-x = 4     
+x = 4
 x = x + 1
 print(x)
 ```
@@ -192,6 +192,6 @@ empfehle ich Ihnen folgende Video.
 ## Zusammenfassung und Ausblick
 
 Das EVA-Prinzip ist das grundlegende Prinzip der Datenverarbeitung. Mit den
-Python-Funktionen input() und print() und den Datentypen Integer, Float uund
+Python-Funktionen `input()` und `print()` sowie den Datentypen Integer, Float und
 String haben wir bereits die wichtigsten Bausteine zusammen, um kleine
 Python-Programme zu schreiben.

@@ -69,7 +69,7 @@ der Stelle XXX der abgefragte Name stehen soll.
 
 <hr>
 
-Fritz macht 
+Fritz macht für
 
 XXX 
 
@@ -92,7 +92,7 @@ Testen Sie Ihr Programm mit verschiedenen Namen.
 name = input('Wie ist dein Name? ')
 
 # Den Witz generieren
-print('Fritz macht')
+print('Fritz macht für')
 print(name)
 print('einen Kaffee. Es bleibt heißes Wasser übrig. Fritz fragt: "Was soll ich mit dem restlichen Wasser machen?"')
 print(name)
@@ -132,7 +132,7 @@ print('Zentimetern.')
 ```{admonition} Übung 2.4
 :class: miniexercise
 Schreiben Sie ein Programm, das zuerst nach einer Zahl fragt und danach nach
-einer zweiten Zahl fragt. Anschließend gibt das Programm aus, welche beiden
+einer zweiten Zahl fragt. Anschließend soll das Programm ausgeben, welche beiden
 Zahlen gewählt wurden und was das Produkt der beiden Zahlen ist.
 
 Testen Sie anschließend Ihr Programm mit kleinen 1x1-Aufgaben, die Sie sich
@@ -142,7 +142,7 @@ selbst ausdenken.
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
-# Eingabe der beiden ahlen durch Abfrage
+# Eingabe der beiden Zahlen durch Abfrage
 zahl1 = float(input('Bitte geben Sie die erste Zahl ein: '))
 zahl2 = float(input('Bitte geben Sie die zweite Zahl ein: '))
 
@@ -162,10 +162,9 @@ print(produkt)
 ```{admonition} Übung 2.5
 :class: miniexercise
 Schreiben Sie ein Programm, dass die Kosten für eine Party ermittelt. Zuerst
-soll der Python-Interpreter nach der Raummiete fragen, dann nach den
+soll der Computer nach der Raummiete fragen, dann nach den
 Gesamtkosten des Pizzadienstes und den Gesamtkosten des Getränkelieferanten.
-Lassen Sie dann die Gesamtkosten der Party ausgeben und zuletzt die Kosten pro
-Gast.
+Lassen Sie dann die Gesamtkosten der Party und die Kosten pro Gast ausgeben.
 
 Testen Sie anschließend, ob Ihr Programm für die folgenden Angaben korrekt rechnet:
 * Eingabe Raummiete: 230 EUR

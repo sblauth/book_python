@@ -13,7 +13,7 @@ kernelspec:
   name: python3
 ---
 
-# 2.1 Taschenrechner und Ausgabe (print)
+# 2.1 Taschenrechner und Ausgabe mit print()
 
 Ein Klassiker beim Erlernen einer neuen Programmiersprache ist das
 Hallo-Welt-Programm. Dabei geht es darum, den Text "Hallo Welt" auf dem
@@ -29,7 +29,7 @@ auch den Umgang mit dem Jupyter Notebook noch weiter zu festigen.
 * Sie kennen die grundlegenden Rechenoperationen in Python.
 * Sie wissen, was ein **Kommentar** ist.
 * Sie können in Python einen Kommentar mit **#** schreiben.
-* Sie können mit **print** das Ergebnis einer Rechnung anzeigen lassen.
+* Sie können mit der **print()**-Funktion das Ergebnis einer Rechnung anzeigen lassen.
 * Sie wissen, dass Texte mit einfachen `'` oder doppelten `"` Anführungszeichen
   zu Beginn des Textes und zum Ende begrenzt werden. 
 ```
@@ -72,11 +72,12 @@ Potenzierung:
 
 In diesem interaktiven Vorlesungsskript können Sie Python direkt ausprobieren.
 Es ist ein großer Vorteil der Jupyter Notebooks, dass in einem Dokument
-Text-Zellen und Code-Zellen gemischt werden können. Diesen Vorteil nutze ich
+Text-Zellen und Code-Zellen gemischt werden können. Dadurch können Sie den 
+Python Code direkt zusammen mit seiner Dokumentation sehen. Diesen Vorteil nutze ich
 aus, um Ihnen den Einstieg in die Programmierung zu erleichtern. Die
 Vorlesungsskripte sind so aufgebaut, dass ich Ihnen erst ein
 Programmierkonstrukt erläutere und Sie dann die Möglichkeit haben, das neu
-erlernte Wissen gleich in Python auszuprobieren.
+erlernte Wissen direkt in Python auszuprobieren.
 
 Die obigen Zellen sind Code-Zellen. Sie können daher direkt in einer der oberen
 Code-Zellen beispielsweise die Additionsaufgabe `2+3` in `2+5` abändern, um sich
@@ -128,18 +129,25 @@ Lassen Sie Python den Term $3\cdot (7-10)+5$ berechnen.
 ```
 ````
 
-## Ausgaben mit print
+Bei unseren Rechenaufgaben wurde direkt das Ergebnis der Berechnung angezeigt. 
+Das ist aber eine Besonderheit der Jupyter Notebooks, in einem normalen Python 
+Programm würde das nicht funktionieren. Zusätzlich zeigen die Jupyter Notebooks
+auch nur den Inhalt der letzten Zeile an, wie Sie hier sehen können
 
-Jetzt lernen Sie das erste Python-Kommando kennen, um dem Computer eine
-Anweisung zu geben. Bei den obigen Rechenaufgaben wurde automatisch das Ergebnis
-der Rechnung angezeigt, sobald die Code-Zelle ausgeführt wurde. Dies ist eine
-Besonderheit der Jupyter Notebooks, würde aber in einem normalen Python-Programm
-nicht funktionieren. Auch möchte man vielleicht ein Zwischenergebnis anzeigen
-lassen. Die interaktive Ausgabe der Jupyter Notebooks zeigt jedoch immer nur den
-Inhalt der letzten Zeile an. 
+```{code-cell} ipython3
+2+3
+2-3
+```
+
+Deshalb werden wir nun lernen, wie man Inhalte (wie zum Beispiel Zwischenergebnisse)
+vom Computer anzeigen lassen kann.
+
+## Ausgaben mit print()
+
+### Ausgabe von Zahlen und Rechenergebnissen
 
 Für die Anzeige von Rechenergebnissen oder Texten gibt es in Python die
-**print()**-Funktion. Die print()-Funktion in Python gibt den Wert oder die
+**print()**-Funktion. Die `print()` Funktion in Python gibt den Wert oder die
 Werte aus, die ihr als Argumente übergeben werden. Das kann zum Beispiel eine
 Zahl sein oder eine Rechenaufgabe, wie in dem folgenden Beispiel.
 
@@ -148,16 +156,16 @@ print(2)
 print(3+3)
 ```
 
-In der ersten Zeile ist das Argument für die print()-Funktion die Zahl 2. Das
-Argument wird in runde Klammern hinter den Funktionsnamen `print` geschrieben.
-Ein Argument ist sozusagen der Input, der an die print()-Funktion übergeben
+In der ersten Zeile ist das Argument für die `print()` Funktion die Zahl 2. Das
+Argument wird in runde Klammern hinter den Funktionsnamen `print()` geschrieben.
+Ein Argument ist sozusagen der Input, der an die `print()` Funktion übergeben
 wird, damit der Python-Interpreter weiß, welcher Wert auf dem Bildschirm
 angezeigt werden soll. 
 
 Das zweite Beispiel in der zweiten Zeile funktioniert genauso. Nur wird diesmal
-eine komplette Rechnung als Argument an die print()-Funktion übergeben. In dem
+eine komplette Rechnung als Argument an die `print()` Funktion übergeben. In dem
 Fall rechnet der Python-Interpreter erst den Wert der Rechnung, also `3+3=6` aus
-und übergibt dann die `6` an die print()-Funktion. Die print()-Funktion wiederum
+und übergibt dann die `6` an die `print()` Funktion. Die `print()` Funktion wiederum
 zeigt dann die `6` am Bildschirm an. 
 
 Insgesamt zeigt daher der Python-Interpreter erst eine 2 und dann in der
@@ -165,7 +173,7 @@ nächsten Zeile eine 6 an.
 
 ```{admonition} Mini-Übung
 :class: miniexercise
-Lassen Sie Python den Term $3:4$ berechnen und geben Sie das Ergebnis mit der print()-Funktion aus. 
+Lassen Sie Python den Term $3:4$ berechnen und geben Sie das Ergebnis mit der `print()` Funktion aus. 
 ```
 
 ```{code-cell} ipython3
@@ -179,9 +187,11 @@ print(3/4)
 ```
 ````
 
-Python kann mit der print()-Funktion jedoch nicht nur Zahlen ausgeben, sondern
+### Ausgabe von Texten
+
+Python kann mit der `print()` Funktion jedoch nicht nur Zahlen ausgeben, sondern
 auch Texte. Ein erster Versuch, einfach den Text als Argument der
-print()-Funktion zu übergeben, scheitert leider, wie das nächste Beispiel zeigt.
+`print` Funktion zu übergeben, scheitert leider, wie das nächste Beispiel zeigt.
 
 ```{code-cell} ipython3
 print(Hallo)
@@ -201,8 +211,8 @@ print('Hallo')
 ```{admonition} Mini-Übung
 :class: miniexercise
 Probieren Sie aus was passiert, wenn Sie die einfachen Anführungszeichen `'`
-durch doppelte Anführungszeichen `"` ersetzen. Lassen Sie den Text Hallo Welt
-ausgeben :-)
+durch doppelte Anführungszeichen `"` ersetzen. Lassen Sie den Text *Hallo Welt*
+ausgeben.
 ```
 
 ```{code-cell} ipython3
@@ -219,10 +229,10 @@ print("Hallo Welt")
 In Python sind beide Arten von Anführungszeichen erlaubt und werden manchmal
 auch gebraucht. Wenn beispielsweise ein Apostroph in einem Text gebraucht wird,
 müssen die äußeren Anführungszeichen die doppelten Anführungszeichen sein. Der
-Python-Interpreter erwartet nämlich immer ein Paar von Anführungszeichen, damit
+Python-Interpreter erwartet nämlich immer ein Paar von Anführungszeichen um Text zu deklarieren, damit
 eindeutig ist, wo der Text beginnt und wo er endet.
 
-Die print()-Funktion kann noch einiges mehr, als wir in dieser Einführung
+Die `print()` Funktion kann noch einiges mehr, als wir in dieser Einführung
 gesehen haben. Wir werden in einem späteren Kapitel im Zusammenhang mit den
 sogenannten f-Strings nochmal darauf zurückkommen.
 

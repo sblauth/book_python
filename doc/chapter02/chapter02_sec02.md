@@ -39,11 +39,11 @@ Der Computer kann Informationen nur als 0 oder 1 verarbeiten. Auf dem
 Speichermedium oder im Speicher selbst werden Daten daher als eine Folge von 0
 und 1 gespeichert. Damit es für uns Programmiererinnen und Programmierer
 einfacher wird, Daten zu speichern und zu verarbeiten, wurden Datentypen
-eingeführt.  
+eingeführt.
 
 **Datentypen** fassen gleichartige Objekte zusammen und stellen passende
 Operationen zur Verfügung. Es hängt von der Programmiersprache ab, welche
-Datentypen zur Verfügung stehen, wie diese im Hintergrund gespeichtert werden
+Datentypen zur Verfügung stehen, wie diese im Hintergrund gespeichert werden
 und welche Operationen damit möglich sind. In diesem Kapitel beschäftigen wir
 uns mit den einfachen Datentypen
 
@@ -97,6 +97,17 @@ im Deutschen. Aber ansonsten funktioniert alles wie erwartet:
 2.5**10
 ```
 
+```{admonition} Bemerkung
+Bei den ersten beiden oberen Rechnungen sehen Sie, dass Python das Ergebnis nicht exakt berechnet,
+sondern als Lösung der Rechenaufgabe `2.3 + 4.6` nicht, wie erwartet, `6.9`, sondern `6.8999999999999995`
+ausgibt. Das liegt an zwei Gründen: Zum einen gibt es im Computer nicht beliebig viel Platz, um Zahlen oder 
+andere Daten abzuspeichern. Zum anderen werden die Zahlen im Computer binär, also mit 0 und 1 repräsentiert,
+sodass Zahlen eine andere Repräsentation als im uns gewohnten Dezimalsystem haben.
+
+Das ist aber nicht besonders schlimm, weil sich das "echte" Ergebnis und das Ergebnis in Python nur um etwa
+$1 * 10^{-15}$ unterscheiden.
+```
+
 Das folgende Video fasst Zahlen in Python zusammen.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtiDkRDPA_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -113,7 +124,7 @@ andere wie beispielsweise `!"§$%&/()=?`.
 Strings werden in Python durch einfache oder doppelte Anführungszeichen definiert:
 
 ```{code-cell} ipython3
-"Dies ist ein String!"
+"Das ist ein String!"
 ```
 
 Strings haben wir bei dem Hallo-Welt-Programm schon kennengelernt. Allerdings
@@ -127,8 +138,8 @@ jetzt mehr erfahren wollen, können Sie sich folgendes Video ansehen.
 
 ## Variablen 
 
-**Variablen** sind beschriftete Schubladen. Oder anders formuliert sind
-Variablen Objekte, denen man einen Namen gibt. Technisch gesehen sind diese
+**Variablen** sind wie beschriftete Schubladen. Oder anders formuliert: Variablen sind
+Objekte, denen man einen Namen gibt. Technisch gesehen sind diese
 Schubladen ein kleiner Bereich im Arbeitsspeicher des Computers. Was in diesen
 Schubladen aufbewahrt wird, kann sehr unterschiedlich sein. Beispielsweise die
 Telefonnummer des ADAC-Pannendienstes, die 10. Nachkommastelle von $\pi$ oder die
@@ -171,7 +182,7 @@ Schreiben Sie in die nächste Code-Zelle einfach den Buchstaben `n` unter die Ko
 ```python
 n
 ```
-Der Interpreter zeigt in rot eine Fehlermeldung an: "NameError: name 'n' is not defined". Damit weist der Interpreter darauf hin, dass die Variable bisher nicht mit einem Wert versehen wurde, sie ist nicht intialisiert worden. Daher kann damit auch nicht gearbeitet werden.
+Der Interpreter zeigt in rot eine Fehlermeldung an: `NameError: name 'n' is not defined`. Damit weist der Interpreter darauf hin, dass die Variable bisher nicht mit einem Wert versehen wurde, sie ist nicht intialisiert worden. Daher kann damit auch nicht gearbeitet werden.
 ````
 
 Gerne können Sie sich auch folgendes Video auf YouTube ansehen, das eine
@@ -210,7 +221,8 @@ oder ß. Zahlen sind erlaubt, aber nicht am Anfang des Namens. Es ist sinnvoll,
 lange Variablen durch einen Unterstrich besser lesbar zu gestalten (sogenannte
 Snake-Case-Formatierung). Ich empfehle für Variablennamen beispielsweise
 `dateiname_alt` oder `dateiname_neu`, wenn beispielsweise eine Datei umbenannt
-wird. Sie sind frei in der Gestaltung der Variablennamen, verboten sind nur die
+wird. Außerdem ist es guter Python Stil, für Variablen ausschließlich Kleinbuchstaben
+zu verwenden. Sie sind frei in der Gestaltung der Variablennamen, verboten sind nur die
 sogannnten **Schlüsselwörter**. Schlüsselwörter sind beispielsweise eingebaute
 Kommandos an den Python-Interpreter. Würden Sie diese als Variablennamen
 benutzen, wüsste der Python-Interpreter nicht, ob das Kommando oder die Variable
@@ -218,7 +230,7 @@ gemeint ist.
 
 ```{admonition} Mini-Übung
 :class: miniexercise
-Initialisieren Sie eine Variable namens alter mit Ihrem aktuellen Alter, eine Variable ``rentenalter`` mit dem Zahlenwert ``67`` und berechnen Sie dann, wie viele Jahre es noch bis zum Renteneintritt dauert. 
+Initialisieren Sie eine Variable namens `alter` mit Ihrem aktuellen Alter, eine Variable `rentenalter` mit dem Zahlenwert `67` und berechnen Sie dann, wie viele Jahre es noch bis zum Renteneintritt dauert. 
 ```
 
 ```{code-cell} ipython3
@@ -257,7 +269,7 @@ print(datentyp_string)
 
 ## Weiteres Lernmaterial
 
-Das folgende Video fasst die drei Datentypen Integer, Float uns String
+Das folgende Video fasst die drei Datentypen Integer, Float und String
 übersichtsartig zusammen.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1WqFJ5wsA4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

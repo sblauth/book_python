@@ -19,7 +19,7 @@ kernelspec:
 ```{admonition} Übung 1.1
 :class: miniexercise
 Installieren Sie Anaconda und Python auf Ihrem PC oder Laptop. Starten Sie die
-Software JupyterLab. Laden Sie dieses Jupyter Notebook herunter und öffnen
+Software JupyterLab. Laden Sie das erste Jupyter Notebook aus dem campUAS Kurs herunter und öffnen
 Sie es mit der Software JupyterLab.
 ```
 
