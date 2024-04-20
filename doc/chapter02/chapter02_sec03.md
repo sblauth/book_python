@@ -121,7 +121,7 @@ einen Integer oder Float verwandeln, indem wir die Funktionen `int()` oder
 soll wie beispielsweise dem Alter einer Person, so lautet der Code wie folgt:
 
 ```python
-alter = int( input('Wie alt sind Sie (in Jahren)?) )
+alter = int( input('Wie alt sind Sie (in Jahren)?') )
 print('Alter: ')
 print(alter)
 ```
@@ -130,7 +130,7 @@ Und soll es eine Fließkommazahl werden, so können wir folgendermaßen den
 Python-Interpreter fragen lassen:
 
 ```python
-groesse = float( input('Wie groß sind Sie gemessen in Metern?) )
+groesse = float( input('Wie groß sind Sie gemessen in Metern?') )
 print('Größe in m')
 print(groesse)
 ```

@@ -101,7 +101,7 @@ print('antwortet: "Einfrieren! Heißes Wasser kann man immer gebrauchen."')
 ````
 
 
-```{admonition} Übungen 2.3
+```{admonition} Übung 2.3
 :class: miniexercise
 Schreiben Sie ein Python-Programm, das eine Länge vom Benutzer abfragt, die in
 Zoll gemessen wurde. Das Programm soll dann diese Länge in Zentimeter umrechnen
