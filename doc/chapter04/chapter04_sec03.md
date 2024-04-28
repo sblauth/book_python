@@ -13,9 +13,9 @@ kernelspec:
 
 # 4.3 Strings
 
-Den Datentyp String haben Sie bereits zu Beginn im Kapitel "Einstieg in die
-Programmierung" kennengelernt. Bis jetzt haben wir Strings vor allem dazu
-benutzt, um mit der print()-Funktion etwas auszugeben. In diesem Jupyter
+Den Datentyp String haben Sie bereits zu Beginn der Vorlesung kennengelernt. 
+Bis jetzt haben wir Strings vor allem dazu
+benutzt, um mit der `print()` Funktion etwas auszugeben. In diesem Jupyter
 Notebook geht es nun darum, Strings auch zu manipulieren und mit den sogenannten
 f-Strings auch formatierte Ausgaben zu produzieren.
 
@@ -37,7 +37,7 @@ f-Strings auch formatierte Ausgaben zu produzieren.
 Im deutschen Fachbegriff Zeichenketten steckt schon die Idee, Strings als eine
 Verkettung von einzelnen Zeichen zu interpretieren. Mit dieser Idee ist dann
 vielleicht auch nicht verwunderlich, dass die einzelnen Zeichen eines Strings
-über den Index angesprochen werden können.
+über ihren Index angesprochen werden können.
 
 ```{code-cell} ipython3
 # Erzeugung und Anzeige String
@@ -69,9 +69,9 @@ Speichern Sie den String 'Hallo, Du da!' in einer Variable. Beantworten Sie folg
 ````
 
 
-Mit den beiden for-Schleifen der letzten beiden Abschnitte, können wir die
+Mit den beiden `for`-Schleifen der letzten beiden Abschnitte können wir die
 Zeichen auch einzeln ausgeben lassen. Als erstes die for-Schleife mit
-Liste/String:
+Liste, bzw. String:
 
 ```{code-cell} ipython3
 for zeichen in 'Hallo, Du Da!':
@@ -158,7 +158,7 @@ gruss = 'Hallo ' + name + '!'
 print(gruss)
 ```
 
-Allerdings haben Sie damit nicht wirklich den String geändert, sondern einen
+Allerdings haben wir damit nicht wirklich den String geändert, sondern einen
 neuen String erzeugt.
 
 ### Ersetzen von Teilstrings
@@ -172,8 +172,8 @@ neuer_text = text.replace('MATLAB', 'Python')
 print(neuer_text)
 ```
 
-In diesem Beispiel haben wir den Teilstring "MATLAB" durch den Teilstring
-"Python" ersetzt. Wie Sie sehen, mussten wir für den abgeänderten Text eine neue
+In diesem Beispiel haben wir den Teilstring `'MATLAB'` durch den Teilstring
+`'Python'` ersetzt. Wie Sie sehen, mussten wir für den abgeänderten Text eine neue
 Variable namens `neuer_text` verwenden. Wenn mehrfach Änderungen des Strings
 durchgeführt werden sollen, ist das Ausdenken von neuen Variablennamen lästig.
 Dann kann auch der alte Variablenname wiederverwendet werden, wie in dem
@@ -206,7 +206,7 @@ print('Vorher dem Anwenden der .replace()-Methode: ')
 print(spruch)
 
 print('Jetzt wird .replace() angewendet: ')
-spruch.replace('Kilogramm', 'Zentner')
+spruch = spruch.replace('Kilogramm', 'Zentner')
 print(spruch)
 ```
 ````
@@ -218,7 +218,7 @@ Zum Schluss behandeln wir noch formatierte Strings, die sogenannten f-Strings.
 Seit Python 3.6 erleichtert dieser Typ von String die Programmierung. Falls Sie
 Python-Code sehen, in dem Prozentzeichen vorkommen (ganz, ganz alt) oder die
 .format()-Methode benutzt wird, wundern Sie sich nicht. In dieser Vorlesung
-verwenden wir f-Strings.
+verwenden wir f-Strings, die neuer und wesentlich intuitiver zu verwenden sind.
 
 f-Strings sind die Abkürzung für "formatted string literals". Sie ermöglichen
 es, den Wert einer Variable oder einen Ausdruck direkt in den String
@@ -236,10 +236,11 @@ print(f'Mein Name ist {name} und ich bin {alter} Jahre alt.')
 ```
 
 Insbesondere bei Ausgabe von Zahlen sind f-Strings besonders nützlich. Wenn nach
-dem Variablennamen ein Doppelpunkt eingefügt wird, kann danach die Anzahl der
-gewünschten Stellen vor dem Komma (hier natürlich ein Punkt) und der
-Nachkommastellen festgelegt werden. Zusätzlich setzen wir ein `f` in die
-geschweiften Klammern, um einen Float anzeigen zu lassen. Im folgenden Beispiel
+dem Variablennamen ein Doppelpunkt eingefügt wird, kann damit die Formatierung der
+Zahl eingestellt werden. Für Fließkommazahlen gibt es beispielsweise die Formatierung
+`3.2f`, welche angibt, dass **3** Stellen vor dem Komma und **2** Stellen nach dem Komma
+angezeigt werden sollen, und das **f** gibt an, dass die übliche Fließkommazahl-Darstellung
+(f für float) verwendet werden soll. Im folgenden Beispiel
 geben wir $\pi$ auf zwei Nachkommastellen an.
 
 ```{code-cell} ipython3
@@ -247,6 +248,11 @@ from numpy import pi
 
 print(f'Pi = {pi:1.2f}')
 ```
+
+Außerdem kann auch nur die Zahl der Nachkommastellen einstellen, indem man
+zum Beispiel die Formatierung `.2f` verwendet, welche angibt, dass nur 
+zwei Nachkommastellen angezeigt werden (und so viele Stellen vor dem Komma,
+wie nötig sind).
 
 Es ist schwierig, sich alle Formatierungsoptionen zu merken. Auf der
 Internetseite

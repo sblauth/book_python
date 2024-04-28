@@ -12,33 +12,33 @@ kernelspec:
 ---
 
 (ref04_sec02)=
-# 4.2 for-Schleifen mit range
+# 4.2 for-Schleifen mit range()
 
-In diesem Kapitel werden wir uns erneut mit Schleifen beschäftigen. Schleifen
+In diesem Kapitel beschäftigen wir uns erneut mit Schleifen. Schleifen
 ermöglichen es uns, bestimmte Aufgaben wiederholt auszuführen, ohne den Code
 mehrmals schreiben zu müssen. Im [Kapitel 4.1](ref04_sec01) haben wir ja bereits
-die for-Schleife mit Listen kennengelernt. In diesem Kapitel konzentrieren wir
-uns auf die for-Schleife mit der range()-Funktion in Python.
+die `for`-Schleife mit Listen kennengelernt. In diesem Kapitel konzentrieren wir
+uns auf die for-Schleife mit der `range()` Funktion in Python.
 
 ## Lernziele
 
 ```{admonition} Lernziele
 :class: admonition-goals
 Sie können Zahlenlisten mit der **range()**-Funktion erzeugen und diese mit der
-for-Schleife kombinieren.
+`for`-Schleife kombinieren.
 ```
 
 ## Die range()-Funktion
 
 In vielen Fällen möchten wir eine Schleife für eine bestimmte Anzahl von
 Iterationen ausführen. In Python können wir dies mit Hilfe der
-`range()`-Funktion erreichen. Die range()-Funktion generiert eine Liste von
-Zahlen, die wir dann anschließend in einer for-Schleife verwenden können.
+`range()` Funktion erreichen. Die `range()` Funktion generiert eine Abfolge von
+Zahlen, die wir dann anschließend in einer `for`-Schleife verwenden können.
 Natürlich kann die Liste von Zahlen auch für andere Dinge genutzt werden, aber
 die Verwendung für for-Schleifen ist sicherlich der häufigste Einsatzzweck von
-range().
+`range()`.
 
-Die Syntax der range()-Funktion ist:
+Die Syntax der `range()`-Funktion ist:
 
 ```python
 range(stop)               # erzeugt eine Liste von 0 bis (stop - 1)
@@ -52,8 +52,9 @@ kombinieren wie im nächsten Abschnitt.
 
 ## range() mit for
 
-Um eine for-Schleife mit der range()-Funktion zu verwenden, kombinieren wir
-einfach die beiden Konzepte:
+Um eine `for`-Schleife mit der `range()` Funktion zu verwenden, kombinieren wir
+einfach die beiden Konzepte und verwenden `range()` anstatt einer Liste als das Objekt,
+über das wir iterieren:
 
 ```python
 for i in range(start, stop, step):
@@ -61,24 +62,24 @@ for i in range(start, stop, step):
 ```
 
 Hier ist `i` die Schleifenvarible, die nacheinander bei jedem Schleifendurchgang
-die Werte in der von range() erzeugten Liste annimmt. Im Folgenden finden Sie
-einige Beispiele für die Verwendung von for-Schleifen mit range():
+die Werte in der von `range()` erzeugten "Liste" annimmt. Im Folgenden finden Sie
+einige Beispiele für die Verwendung von `for`-Schleifen mit `range()`:
 
 ```{code-cell} ipython3
 for i in range(5):
     print(i)
 ```
 
-`range(5)` erzeugt eine Liste mit den Zahlen 0, 1, 2, 3, 4, die dann durch die
-`print()`-Funktion nacheinander ausgegeben werden.
+`range(5)` erzeugt eine "Liste" mit den Zahlen 0, 1, 2, 3, 4, die dann durch die
+`print()` Funktion nacheinander ausgegeben werden.
 
 
 ```{code-cell} ipython3
-for i in range(2, 6):      
+for i in range(2, 6):
     print(i)
 ```
 
-`range(2,6)` erzeugt eine Liste mit den Zahlen 2, 3, 4, 5. Achtung, die 6 gehört
+`range(2,6)` erzeugt eine "Liste" mit den Zahlen 2, 3, 4, 5. Achtung, die 6 gehört
 nicht dazu, da das letzte Element der Liste ja die stop-Zahl - 1 ist.
 
 
@@ -137,7 +138,8 @@ for i in range(2, 11, 2):
 
 ```{admonition} Mini-Übung
 :class: miniexercise
-Schreiben Sie ein Programm, dass die Summe der ersten n Quadratzahlen berechnet.
+Schreiben Sie ein Programm, dass die Summe der ersten $n$ Quadratzahlen berechnet. Dabei
+ist $n$ eine Variable. Testen Sie Ihr Programm für $n = 5$.
 ```
 ````{admonition} Lösung
 :class: miniexercise, toggle
@@ -146,18 +148,16 @@ n = 5  # Beispielwert
 summe = 0
 
 for i in range(1, n + 1):
-    summe += i ** 2
+    summe = summe + i ** 2
 
-print("Die Summe der ersten Quadratzahlen ist:", summe)
+print("Die Summe der ersten Quadratzahlen ist: ")
+print(summe)
 ```
 
 Hier ist die Variable `n` im Python-Code gesetzt worden. Schöner wäre eine interaktive Abfrage mit der input()-Funktion:
 ```python
-n = int(input('Wie viele Quadratzahlen sollen summiert werden?))
+n = int(input('Wie viele Quadratzahlen sollen summiert werden?'))
 ```
 Aber das war nicht gefragt.
 ````
-
-
-
 
