@@ -138,18 +138,18 @@ farbe = input("Gib die Farbe des Quadrats auf Englisch ein (z.B. red, blue, gree
 
 # Erstellen eines Turtle-Objekts
 turtle.clearscreen()
-quadrat = turtle.Turtle()
+robo = turtle.Turtle()
 
 # Zeichnen des Quadrats
-quadrat.pencolor(farbe)
-quadrat.forward(seitenlaenge)
-quadrat.left(90)
-quadrat.forward(seitenlaenge)
-quadrat.left(90)
-quadrat.forward(seitenlaenge)
-quadrat.left(90)
-quadrat.forward(seitenlaenge)
-quadrat.left(90)
+robo.pencolor(farbe)
+robo.forward(seitenlaenge)
+robo.left(90)
+robo.forward(seitenlaenge)
+robo.left(90)
+robo.forward(seitenlaenge)
+robo.left(90)
+robo.forward(seitenlaenge)
+robo.left(90)
 ```
 ````
 

@@ -50,7 +50,7 @@ In der Mathematik gibt es den Begriff des Vektors. Einen Vektor kann man als
 eine Sammlung von Zahlen interpretieren. Dabei müssen Vektoren nicht immer eine
 geometrische Interpretation haben. Beispielsweise steht der Vektor
 
-(116, 144, 199)
+$(116, 144, 199)$
 
 für ein sehr schönes Blau, wenn die drei Komponenten als die Intensität der
 Farbanteile Rot - Grün - Blau interpretiert werden. Diese Art Farben zu
@@ -299,7 +299,7 @@ die Liste. Daher ist dieser Befehl als eine sogenannte **Methode**
 implementiert. Eine Methode ist eine Funktion, die zu einem Datentyp dazugehört.
 
 Als Alternative zur `del()` Funktion gibt es in Python auch die Möglichkeit,
-ein Element einer Liste mit der Methode `pop()` zu löschen, wie im Folgenden gezeigt 
+ein Element einer Liste mit der Methode `.pop()` zu löschen, wie im Folgenden gezeigt 
 wird
 
 ```{code-cell} ipython3
@@ -307,7 +307,7 @@ meine_liste = ['Null', 'Eins', 'Zwei', 'Drei', 'Vier', 'Fünf']
 print('Vor dem Löschen: ')
 print(meine_liste)
 
-meine_list.pop(2)
+meine_liste.pop(2)
 print('Nach dem Löschen')
 print(meine_liste)
 ```
