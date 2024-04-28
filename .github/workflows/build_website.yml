@@ -1,4 +1,4 @@
-name: sphinx
+name: build_website
 on: [push, pull_request]
 permissions: 
   contents: write
@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-and-deploy:
-    name: Run sphinx and update GitHub pages
+    name: Run jupybook and update GitHub pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,7 +29,7 @@ jobs:
           pip install -r doc/requirements.txt
 
       - uses: ammaraskar/sphinx-problem-matcher@master
-      - name: Build Sphinx docs
+      - name: Build docs w/ jupybook
         run: |
           jb build doc
 
