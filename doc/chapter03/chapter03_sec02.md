@@ -67,7 +67,8 @@ Klassen) zur Verfügung stellen und damit den eigentlichen Python-Kern erweitern
 Module müssen importiert werden, damit der Python-Interpreter diese erweiterten
 Funktionalitäten benutzen kann.
 
-Es gibt mehrere Anweisungen, ein Modul zu importieren. Als erstes betrachten wir
+Es gibt mehrere Arten, um ein Modul oder auch Teile davon zu importieren. 
+Als erstes betrachten wir
 die direkte import-Anweisung und importieren das Mathematik-Modul `numpy`. Das
 NumPy-Modul ist eine leistungsstarke Bibliothek für numerische Berechnungen in
 Python, die häufig in wissenschaftlichen und technischen Anwendungen verwendet
@@ -158,7 +159,7 @@ print(sin(0))
 
 ````{admonition} Mini-Übung
 :class: miniexercise
-Importieren Sie die Wurzel-Funktion sqrt() direkt aus NumPy. Berechnen Sie dann
+Importieren Sie die Wurzel-Funktion `sqrt()` direkt aus NumPy. Berechnen Sie dann
 $\sqrt{49}$ und $\sqrt{2}$ und lassen Sie das Ergebnis jeweils ausgeben.
 ````
 

@@ -14,13 +14,14 @@ kernelspec:
 # 3.1 Listen
 
 Bisher haben wir drei verschiedene Datentypen kennengelernt:
-* Integer (ganze Zahlen),
-* Floats (Fließkommazahlen) und
-* Strings (Zeichenketten).
+* Integer (`int`) - ganze Zahlen,
+* Floats (`float`) - Fließkommazahlen und
+* Strings (`str`) - Zeichenketten.
 
-Damit können wir einzelne Objekte der realen Welt ganz gut abbilden. Mit einem
-String können wir den Namen einer Person erfassen, mit einem Integer das Alter
-der Person und mit einem Float die Körpergröße der Person gemessen in Meter. Was
+Damit können wir einzelne Objekte der realen Welt schon ganz gut abbilden. Beispielsweise
+können wir mit einem
+String den Namen einer Person erfassen, mit einem Integer ihr Alter 
+und mit einem Float ihre Körpergröße in Meter erfassen. Was
 uns aber bisher fehlt ist, eine Sammlung von Namen oder eine Sammlung von
 Körpergrößen verwalten zu können. Daher werden wir uns in diesem Jupyter
 Notebook mit Listen beschäftigen.
@@ -67,10 +68,10 @@ Der Fachbegriff für
 Datentypen, die daür gedacht sind, Daten als Sammlung zu verwalten, ist
 **Container**. In Python gibt es verschiedene Container:
 
-* Listen: list
-* Tupel: tuple
-* Dictionaries: dict
-* Mengen: set
+* Listen: `list`
+* Tupel: `tuple`
+* Dictionaries: `dict`
+* Mengen: `set`
 
 Wir behandeln in diesem Abschnitt die Listen.
 
@@ -78,7 +79,7 @@ Wir behandeln in diesem Abschnitt die Listen.
 
 ## Listen erzeugen mit []
 
-Eine Liste wird in Python durch eckige Klammern [  ] erzeugt. 
+Eine Liste wird in Python durch eckige Klammern `[  ]` erzeugt. 
 
 Betrachten wir ein Beispiel. Hier wird eine Liste mit den Elementen 1, 2, 3, 4,
 5 erzeugt und dann anschließend in der Variablen `liste_beispiel` gespeichert.
@@ -202,7 +203,7 @@ print(liste_de_en)
 ```
 
 Das Aneinanderhängen von Elementen zweier Container nennen wir in der Informatik
-**Verkettung**. Oft wird auch der englische Begriff **Concatenation** verwendet.
+**Verkettung**. Oft wird auch der englische Begriff **concatenation** verwendet.
 
 In der folgenden Mini-Übung können Sie die Verkettung ausprobieren.
 
@@ -247,7 +248,7 @@ Februar, der den Index 11 hat.
 Die Verkettung der Listen führt dazu, dass die Listen länger werden. Die
 Umkehrung davon fehlt noch, das Kürzen von Listen. Wie so oft in Python gibt es
 mehrere Möglichkeiten, ein Element aus einer Liste zu entfernen, also zu
-löschen. Die Anweisung `del` löscht das Element an einer bestimmten Position.
+löschen. Die Funktion `del()` löscht das Element an einer bestimmten Position.
 Zuerst kommt die Anweisung, dann das Listenelement mit Index:
 
 ```{code-cell} ipython3
@@ -260,7 +261,7 @@ print('Nach dem Löschen')
 print(meine_liste)
 ```
 
-Wie Sie sehen ist das dritte Element in der Liste gelöscht worden, da die
+Wie Sie sehen ist das dritte Element in der Liste, der String `'Zwei'`, gelöscht worden, da die
 Nummerierung des Index bei 0 startet.
 
 +++
@@ -287,23 +288,43 @@ print('Nach dem Einkauf im Supermarkt: ')
 print(einkaufsliste)
 ```
 
-Die Vorgehensweise, um das Element `Milch` zu löschen, ist diesmal komplett
+Die Vorgehensweise, um etwa das Element `Milch` zu löschen, ist hier komplett
 anders. Diesmal hängen wir an die Variable `einkaufsliste` einen Punkt und dann
 den Namen des Kommandos `remove()`. Wieso das?
 
-Das Kommando `del` ist so wichtig und universell, dass es mit allen Containern
+Die Funktion `del()` ist so wichtig und universell, dass es mit allen Containern
 funktioniert. Daher ist dieser Befehl als eine sogenannte **Funktion** im
-Python-Kern implementiert. Das Kommando `remove()` bezieht sich jedoch nur auf
+Python-Kern implementiert. Das Kommando `.remove()` bezieht sich jedoch nur auf
 die Liste. Daher ist dieser Befehl als eine sogenannte **Methode**
 implementiert. Eine Methode ist eine Funktion, die zu einem Datentyp dazugehört.
+
+Als Alternative zur `del()` Funktion gibt es in Python auch die Möglichkeit,
+ein Element einer Liste mit der Methode `pop()` zu löschen, wie im Folgenden gezeigt 
+wird
+
+```{code-cell} ipython3
+meine_liste = ['Null', 'Eins', 'Zwei', 'Drei', 'Vier', 'Fünf']
+print('Vor dem Löschen: ')
+print(meine_liste)
+
+meine_list.pop(2)
+print('Nach dem Löschen')
+print(meine_liste)
+```
+
+Wir halten also fest, dass man mit der Funktion `del()` und der Methode `.pop()` ein Element einer Liste basierend auf dessen Index löschen kann, während die Methode `.remove()` dazu verwendet wird, ein Element basierend auf dessen Wert aus einer Liste zu löschen.
 
 In späteren Kapiteln werden wir selbst Funktionen und Methoden
 (Objektorientierung) implementieren und auf die Unterschiede detaillierter
 eingehen. Im Moment begnügen wir uns mit der Tatsache, dass es Funktionen wie
 
-* input()
-* print()
-* del()
+* `input()`,
+* `print()` und
+* `del()`
 
 gibt und Methoden, die mit einem Punkt an das Objekt angehängt werden wie z.B.
-`.remove()`.
+
+* `.remove()` und
+* `.pop()`
+
+für Listen.

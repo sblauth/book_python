@@ -15,8 +15,8 @@ kernelspec:
 
 In der Informatik nennt man Grafiken, die dadurch entstehen, dass ein Roboter
 Linien auf eine Leinwand zeichnet, Turtle-Grafiken. Der Roboter wird dabei mit
-einfachen Kommandos gesteuert. Beschrieben wird er durch seine Position (x- und
-y-Koordinaten in einem kartesischen Koordinatensystem) und seine Ausrichtung.
+einfachen Kommandos gesteuert. Beschrieben wird er durch seine Position ($x$- und
+$y$-Koordinaten in einem kartesischen Koordinatensystem) und seine Ausrichtung.
 Der "Stift" des Roboters kann von seinen Eigenschaften her ebenfalls variieren.
 So können beispielsweise verschiedenfarbige Stifte verwendet werden oder die
 Linienstärke kann verändert werden.
@@ -161,7 +161,8 @@ Dreiecks zeigt in die Richtung, in die der Roboter aktuell schaut.
 Der Roboter wird mit einfachen Befehlen wie vorwärts, links, rechts, usw.
 gesteuert. Die Befehle sind dabei englisch. Da sie an den Roboter gerichtet
 sind, wird zuerst der Name des Roboters verwendet, dann ein Punkt gesetzt und
-zuletzt der Befehlsname geschrieben. In die runden Klammern kommen die
+zuletzt der Befehlsname geschrieben, also eine Methode verwendet. 
+In die runden Klammern kommen die
 Argumente, z.B. um wie viele Schritte der Roboter sich vorwärts bewegen soll.
 
 Mit dem Befehl
@@ -237,27 +238,27 @@ Anmerkung: natürlich hätten wir den Roboter auch viermal nach rechts drehen la
 
 Die folgenden Befehle an den Roboter dienen zur Steuerung der Bewegung:
 
-* forward(schritte): Der Roboter bewegt sich vorwärts, die Streckenlänge wird in
+* `.forward(schritte)`: Der Roboter bewegt sich vorwärts, die Streckenlänge wird in
   Schritten `schritte` angegeben.
-* backward(schritte): Der Roboter bewegt sich rückwärts, die Streckenlänge wird
+* `.backward(schritte)`: Der Roboter bewegt sich rückwärts, die Streckenlänge wird
   in Schritten `schritte` angegeben.
-* right(winkel): Der Roboter dreht sich nach rechts, der Winkel `winkel` wird in
+* `.right(winkel)`: Der Roboter dreht sich nach rechts, der Winkel `winkel` wird in
   Grad angegeben. 
-* left(winkel): Der Roboter dreht sich nach links, der Winkel `winkel` wird in
-  Grad angegeben.  
-* goto(x,y): Der Roboter läuft direkt zu der angegeben Position (x,y).
+* `.left(winkel)`: Der Roboter dreht sich nach links, der Winkel `winkel` wird in
+  Grad angegeben.
+* `.goto(x,y)`: Der Roboter läuft direkt zu der angegeben Position (x,y).
 
 Der Stift wird mit folgenden Befehlen eingestellt:
 
-* penup(): Der Stift wird hochgehoben. Bewegt sich der Roboter, hinterlässt er
+* `.penup()`: Der Stift wird hochgehoben. Bewegt sich der Roboter, hinterlässt er
   keine Zeichnung. 
-* pendown(): Der Stift wird abgesetzt, ab jetzt zeichnet der Roboter wieder.
-* pensize(breite): Die Breite der Striche wird eingestellt, z.B. ist
-  `robo.pensize(10)` ein breiter Strich.  
+* `.pendown()`: Der Stift wird abgesetzt, ab jetzt zeichnet der Roboter wieder.
+* `.pensize(breite)`: Die Breite der Striche wird eingestellt, z.B. ist
+  `robo.pensize(10)` ein breiter Strich.
 
-Für die Farbe gibt es das folgende Kommando:
+Für die Farbe gibt es die folgende Methode:
 
-* pencolor(farbe): Ändert die Farbe der Striche, z.B. stellt der Befehl
+* `.pencolor(farbe)`: Ändert die Farbe der Striche, z.B. stellt der Befehl
   `robo.pencolor('red')` auf rote Farbe um. Die Farben werden als String
   übergeben und entsprechen den englischen Farben.
 
