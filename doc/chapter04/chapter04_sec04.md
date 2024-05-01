@@ -74,7 +74,7 @@ for i in range(anzahl_seiten):
 
 ```{admonition} Übung 4.4
 :class: miniexercise
-Schreiben Sie ein Programm, das den Benutzer nach 5 Zahlen fragt und diese in einer Liste speichert. Anschließend soll das Programm die Summe der Zahlen in der Liste mithilfe einer for-Schleife berechnen und ausgeben. Tipp: Man kann mit der
+Schreiben Sie ein Programm, das den Benutzer nach 5 (ganzen) Zahlen fragt und diese in einer Liste speichert. Anschließend soll das Programm die Summe der Zahlen in der Liste mithilfe einer for-Schleife berechnen und ausgeben. Tipp: Man kann mit der
 `.append()` Methode einer Liste ein Element zur Liste hinzufügen, wie in der [Dokumentation](https://docs.python.org/3/tutorial/datastructures.html) beschrieben ist.
 ```
 ````{admonition} Lösung

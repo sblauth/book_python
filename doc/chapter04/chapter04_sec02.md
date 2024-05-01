@@ -47,7 +47,7 @@ range(start, stop, step)  # erzeugt eine Liste von start bis (stop - 1) mit der 
 ```
 
 Es ist schwierig, sich den Inhalt von `range()` direkt anzuschauen. Am
-einfachsten ist es, die range()-Funktion direkt mit der for-Schleife zu
+einfachsten ist es, die `range()` Funktion direkt mit der for-Schleife zu
 kombinieren wie im nächsten Abschnitt.
 
 ## range() mit for
@@ -116,7 +116,7 @@ for i in range(3, 100, 3):
 ## Anwendungsbeispiele für die for-Schleife
 
 Insbesondere, wenn die Anzahl der Wiederholungen feststeht, kommt die
-for-Schleife in Kombination mit range() zum Einsatz. Im Folgenden sehen wir uns
+`for`-Schleife in Kombination mit `range()` zum Einsatz. Im Folgenden sehen wir uns
 typische Beispiele an.
 
 Beispiel 1: Berechnung der Summe der ersten 10 natürlichen Zahlen
@@ -154,7 +154,7 @@ print("Die Summe der ersten Quadratzahlen ist: ")
 print(summe)
 ```
 
-Hier ist die Variable `n` im Python-Code gesetzt worden. Schöner wäre eine interaktive Abfrage mit der input()-Funktion:
+Hier ist die Variable `n` im Python-Code gesetzt worden. Schöner wäre eine interaktive Abfrage mit der `input()`-Funktion:
 ```python
 n = int(input('Wie viele Quadratzahlen sollen summiert werden?'))
 ```

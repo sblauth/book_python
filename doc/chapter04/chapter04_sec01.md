@@ -107,7 +107,7 @@ print('Ich bin fertig!')
 Ein großer Vorteil von Schleifen ist zum einen die bessere Lesbarkeit und zum
 anderen ihre große Flexibilität. Wir können einfach weitere Elemente an die
 Liste hinzufügen oder Elemente entfernen, innerhalb der Schleife wird, egal
-wie lange die Liste ist, mit jedem Element der Liste das selbe gemacht.
+wie lange die Liste ist, mit jedem ihrer Elemente das selbe gemacht.
 
 Im Kapitel [Kapitel 4.2](ref04_sec02) werden wir noch eine einfachere Funktion
 kennenlernen, um Zahlenlisten nach einem vorgegebenem Schema zu erzeugen.

@@ -61,13 +61,13 @@ oder pip in einem Jupyter Notebook nachinstallieren kann.
 <ol>
 <li>Öffnen Sie das Jupyter Notebook.</li>
 <li>Erstellen Sie eine neue Code-Zelle und geben Sie folgenden Befehl ein:
-<p><code>!conda install &lt;paketname&gt;</code></p>
-<p>Ersetzen Sie dabei &lt;paketname&gt; durch den Namen des zu installierenden Pakets.</p>
+<p><code>!conda install paketname</code></p>
+<p>Ersetzen Sie dabei paketname durch den Namen des zu installierenden Pakets.</p>
 <li>Führen Sie die Zelle aus, indem Sie auf den Run-Button klicken.</li>
 <li>Warten Sie, bis das Paket heruntergeladen und installiert wurde.</li>
 <li>Überprüfen Sie, ob das Paket korrekt installiert wurde, indem Sie eine weitere
    Code-Zelle erstellen und das Paket importieren:
-<p><code>import &lt;paketname&gt;</code></p>
+<p><code>import paketname</code></p>
 <p>Wenn kein Fehler auftritt, wurde das Paket erfolgreich installiert.</p>
 </ol>
 
@@ -76,12 +76,12 @@ oder pip in einem Jupyter Notebook nachinstallieren kann.
 <ol>
 <li>Öffnen Sie das Jupyter Notebook.</li>
 <li>Erstellen Sie eine neue Code-Zelle und geben Sie folgenden Befehl ein:</li>
-<p><code>!pip install &lt;paketname&gt;</code></p>
-<p>Ersetzen Sie dabei &lt;paketname&gt; durch den Namen des zu installierenden Pakets.</p>
+<p><code>!pip install paketname</code></p>
+<p>Ersetzen Sie dabei paketname durch den Namen des zu installierenden Pakets.</p>
 <li>Führen Sie die Zelle aus, indem Sie auf den Run-Button klicken.</li>
 <li>Warten Sie, bis das Paket heruntergeladen und installiert wurde.</li>
 <li>Überprüfen Sie, ob das Paket korrekt installiert wurde, indem Sie eine weitere Code-Zelle erstellen und das Paket importieren:</p>
-<p><code>import &lt;paketname&gt;</code></p>
+<p><code>import paketname</code></p>
 <p>Wenn kein Fehler auftritt, wurde das Paket erfolgreich installiert.</p>
 </ol>
 

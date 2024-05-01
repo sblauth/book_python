@@ -53,7 +53,7 @@ Aber welche Zeichen gehören dazu? Probieren Sie die folgende Mini-Übung aus.
 
 ````{admonition} Mini-Übung
 :class: miniexercise
-Speichern Sie den String 'Hallo, Du da!' in einer Variable. Beantworten Sie folgende Fragen zuerst durch Überlegen, dann durch Ausprobieren.
+Speichern Sie den String `'Hallo, Du da!'` in einer Variable. Beantworten Sie folgende Fragen zuerst durch Überlegen, dann durch Ausprobieren.
 
 * Was ist der größte Index des String 'Hallo, Du da!'?
 * Was passiert, wenn Sie auf den Index 20 zugreifen wollen?
@@ -64,7 +64,7 @@ Speichern Sie den String 'Hallo, Du da!' in einer Variable. Beantworten Sie folg
 :class: miniexercise, toggle
 
 * Der größte Index ist 12.
-* Beim Versuch, auf Index 20 zuzugreifen, gibt es eine Fehlermeldung: 'IndexError: string index out of range'. Der Index 20 ist außerhalb des zulässigen Indexbereichs von 0 bis 12.
+* Beim Versuch, auf Index 20 zuzugreifen, gibt es eine Fehlermeldung: `'IndexError: string index out of range'`. Der Index 20 ist außerhalb des zulässigen Indexbereichs von 0 bis 12.
 * Das Zeichen an Indexposition 6 ist ein Leerzeichen. Leerzeichen sind auch Zeichen und müssen mitgezählt werden.
 ````
 
@@ -119,8 +119,8 @@ print('Nach dem Austausch:')
 print(wort)
 ```
 
-Der Python-Interpreter gibt eine Fehlermeldung aus: 'str' object does not
-support item assignment. Ein item ist ein einzelnes Element der Liste und
+Der Python-Interpreter gibt eine Fehlermeldung aus: `'str' object does not
+support item assignment`. Ein item ist ein einzelnes Element der Liste und
 assignment ist das englische Wort für Zuweisung. Auf deutsch lautet diese
 Fehlermeldung also, dass ein String-Objekt die Zuweisung eines einzelnen
 Elements/Zeichens nicht unterstützt. Oder anders ausgedrückt, es ist verboten,
@@ -217,7 +217,7 @@ print(spruch)
 Zum Schluss behandeln wir noch formatierte Strings, die sogenannten f-Strings.
 Seit Python 3.6 erleichtert dieser Typ von String die Programmierung. Falls Sie
 Python-Code sehen, in dem Prozentzeichen vorkommen (ganz, ganz alt) oder die
-.format()-Methode benutzt wird, wundern Sie sich nicht. In dieser Vorlesung
+`.format()` Methode benutzt wird, wundern Sie sich nicht. In dieser Vorlesung
 verwenden wir f-Strings, die neuer und wesentlich intuitiver zu verwenden sind.
 
 f-Strings sind die Abkürzung für "formatted string literals". Sie ermöglichen
