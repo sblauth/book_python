@@ -105,6 +105,11 @@ rückwärts zählt.
 :class: miniexercise
 Lassen Sie die Dreier-Zahlen von 3 bis 99 ausgeben, also 3, 6, 9, 12, 15, ..., 96, 99.
 ```
+
+```{code-cell} ipython3
+# Hier Ihr Code
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
@@ -141,6 +146,11 @@ for i in range(2, 11, 2):
 Schreiben Sie ein Programm, dass die Summe der ersten $n$ Quadratzahlen berechnet. Dabei
 ist $n$ eine Variable. Testen Sie Ihr Programm für $n = 5$.
 ```
+
+```{code-cell} ipython3
+# Hier Ihr Code
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python

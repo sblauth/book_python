@@ -116,6 +116,11 @@ kennenlernen, um Zahlenlisten nach einem vorgegebenem Schema zu erzeugen.
 :class: miniexercise
 Schreiben Sie ein Programm, das die ersten 10 Quadratzahlen berechnet und ausgibt.
 ```
+
+```{code-cell} ipython3
+# Hier Ihr Code
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
@@ -149,6 +154,11 @@ Schreiben Sie eine `for`-Schleife, die die klassischen Schulnoten "sehr gut"  bi
 "ungenügend" einzeln ausgibt. Zur Erinnerung: die deutschen Schulnotenlauten
 lauten sehr gut, gut, befriedigend, ausreichend, mangelhaft und ungenügend.
 ```
+
+```{code-cell} ipython3
+# Hier Ihr Code
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
