@@ -53,7 +53,7 @@ ansonsten der 2. Anweisungsblock. Danach führt der Python-Interpreter alles nac
 dem if-else-Konstrukt aus, d.h. der Interpreter macht mit dem normalen
 Programmablauf weiter.
 
-Hier wieder das Beispiel mit dem Alter:  
+Hier wieder das Beispiel mit dem Alter:
 
 ```python
 alter = int(input('Wie alt sind Sie? '))
@@ -104,7 +104,7 @@ aktuelle Temperatur kleiner gleich 3 ˚C ist, dann lassen Sie ausgeben:
 :class: miniexercise, toggle
 ```python
 # Eingabe
-temperatur = float(input('Welche Temperatur haben wir aktuell?'))
+temperatur = float(input('Welche Temperatur haben wir aktuell (in Grad Celsius)?'))
 
 # Verarbeitung und Ausgabe
 if temperatur <= 3:
@@ -224,7 +224,7 @@ if bedingung 1:
 elif bedingung 2:
     anweisungsblock 2
 elif bedingung 3:
-    anweisungsblock 3   
+    anweisungsblock 3
 ...
 else:
     anweisungsblock n
@@ -262,7 +262,7 @@ Sie finden den aktuellen Bußgeldkatalog für Geschwindigkeitsüberschreitungen 
 dem PKW im Internet auf der Seite:
 https://www.bussgeldkatalog.org/geschwindigkeitsueberschreitung/ Schreiben Sie
 ein Skript, dass abhängig von der Geschwindigkeitsüberschreitung ausgibt,
-welche Strafe in Euro verhängt wird. Die Tabelle für das Jahr 2022 lautet wie
+welche Strafe in Euro verhängt wird. Die Tabelle für das Jahr 2024 lautet wie
 folgt:
 ```{image} pics/part02_bussgeldkatalog.png
 :name: part02_bussgeldkatalog

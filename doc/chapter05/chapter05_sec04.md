@@ -30,7 +30,7 @@ das Programm ausgeben: "Du bist noch nicht volljährig."
 geburtsjahr = int(input('In welchem Jahr wurden Sie geboren? '))
 
 # Verarbeitung: berechne Alter
-aktuelles_jahr = 2023
+aktuelles_jahr = 2024
 alter = aktuelles_jahr - geburtsjahr
 
 # Ausgabe
@@ -111,6 +111,10 @@ Hier ist die Zutatenliste für 4 Personen: <br>
 8 EL Tomatenmark <br>
 4 EL Wasser <br>
 usw.
+
+Tipp: Sie können die Länge einer Liste mit der `len()` Funktion berechnen lassen,
+wie in der [Dokumentation](https://docs.python.org/3/library/functions.html#len) 
+beschrieben.
 ```
 ````{admonition} Lösung
 :class: miniexercise, toggle
@@ -177,7 +181,7 @@ Bemerkung: Eleganter wäre die Schreibweise `anzahl_a += 1`.
 
 ```{admonition} Übung 5.5
 :class: miniexercise
-Schreiben Sie ein Programm, das mit Turtle ein n-Eck zeichnet. Das -Eck soll in
+Schreiben Sie ein Programm, das mit Turtle ein n-Eck zeichnet. Das n-Eck soll in
 einen Kreis mit Radius $r$ passen. Die Anzahl der Ecken, der Radius des Kreises
 und die Stiftfarbe sollen auf deutsch vom Benutzer abgefragt werden. Bei den
 Stiftfarben darf nur aus den Farben rot, grün und blau ausgewählt werden. Wählt

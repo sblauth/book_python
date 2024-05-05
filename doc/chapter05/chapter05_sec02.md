@@ -41,7 +41,10 @@ if bedingung:
 Ist die Bedingung erfüllt, also "True", so wird der eingerückte Anweisungsblock
 ausgeführt, ansonsten übersprungen. Damit ist gemeint, dass der
 Python-Interpreter nach dem Ende des if-Blocks weiter macht, falls die Bedingung
-nicht erfüllt (= False) wird.
+nicht erfüllt (also `False`) ist. Wie im letzten Kapitel zu den Zählschleifen wird
+der Anweisungsblock in Python eingerückt, um dem Interpreter kenntlich zu machen, 
+wo dieser anfängt und aufhört. Außerdem wird die Zeile, die mit `if` startet, auch
+wieder mit einem Doppelpunkt `:` abgeschlossen.
 
 Wir betrachten nun ein Beispiel:
 
@@ -78,7 +81,7 @@ Schreiben Sie ein Skript, das einen Benutzer oder eine Benutzerin nach der aktue
 :class: miniexercise, toggle
 ```python
 # Eingabe
-temperatur = int(input('Welche Temperatur haben wir aktuell?'))
+temperatur = float(input('Welche Temperatur haben wir aktuell (in Grad Celsius)?'))
 
 # Verarbeitung und Ausgabe
 if temperatur <= 10:

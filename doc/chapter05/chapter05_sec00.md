@@ -6,7 +6,7 @@ einfachen Aneinanderreihung von Befehlen besteht, nennt man linear. Bisher
 hatten wir also nur lineare Programme.
 
 In diesem und in den nächsten Skripten werden wir uns mit dem Thema
-**Kontrollstruktur** beschäftigen. Kontrollstrukturen dienen dazu, den linearen
+**Kontrollstrukturen** beschäftigen. Kontrollstrukturen dienen dazu, den linearen
 Ablauf der Programme oder Skripte aufzubrechen und beispielsweise auf Eingaben
 der Benutzerinnen und Benutzer zu reagieren. Wir starten dazu mit der
 Kontrollstruktur **Programmverzweigung**. Wenn ein Skript auf eine Eingabe oder

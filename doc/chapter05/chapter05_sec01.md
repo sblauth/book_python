@@ -43,11 +43,11 @@ Datentyp, einen sogenannten booleschen Datentyp. Nach dem englischen Wort wird
 dieser Datentyp in der Informatik üblicherweise **Bool** oder **Boolean** genannt. Das
 besondere an diesem Datentyp ist, dass eine Variable diesen Datentyps nur zwei
 verschiedene Werte annehmen kann, nämlich
-* True: Wahrheitswert ist wahr oder
-* False: Wahrheitswert ist falsch.
+* `True`: Wahrheitswert ist wahr oder
+* `False`: Wahrheitswert ist falsch.
 
 Aber wie kann man dann überprüfen, welcher Datentyp in einer Variablen
-gespeichert ist? Dazu gibt es das Kommando `type`. Führen Sie die nächste
+gespeichert ist? Dazu gibt es das Kommando `type()`. Führen Sie die nächste
 Code-Zelle aus.
 
 ```{code-cell} ipython3
@@ -64,7 +64,7 @@ Zunächst beschäftigen wir uns mit mathematischen Vergleichen. In der Mathemati
 ist ein Vergleich ein Ausdruck mit zwei Argumenten und einem Vergleichsoperator
 in der Mitte. Die beiden Argumente können auch unterschiedliche Datentypen
 haben, dann muss der Vergleichsoperator aber sinnvoll für diese Datentypen
-definiert sein. Z.B. darf man einen Integer mit einem Float vergleichen 
+definiert sein. Man darf z.B. einen Integer mit einem Float vergleichen 
 
 `3 < 17.2`
 
@@ -91,7 +91,7 @@ Vergleichsoperatoren aus.
 
 Ist x genau gleich 15?
 ```{code-cell} ipython3
-x == 15    
+x == 15
 ```
 
 Ist x kleiner als 42?
@@ -182,7 +182,7 @@ print(string01 == string04)  # Ausgabe: False
 In diesem Beispiel sind die Strings `string01` und `string03` gleich. Der String
 `string02` ist jedoch unterschiedlich von `string01`, daher ist das Ergebnis
 `False`. Beachten Sie auch, dass der String `string04` nicht gleich `string01`
-ist, obwohl er den gleichen Wert hat, da Groß- und Kleinschreibung in Python bei
+ist, obwohl er das gleichen Wort hat, da Groß- und Kleinschreibung in Python bei
 der Vergleichsoperation berücksichtigt werden.
 
 Um zu überprüfen, ob ein String in einem anderen enthalten ist, können wir den
@@ -224,7 +224,7 @@ print(a >= b)  # Ausgabe: False
 
 In diesem Beispiel ist `'Apfel'` kleiner als `'Banane'`, da "A" im Alphabet vor
 "B" steht, daher ist das Ergebnis des `<`-Operators `True`. Der `>`-Operator
-gibt `False` zurück, da `'Apfel'` größer als `'Banane'` ist. Der `<=`-Operator
+gibt `False` zurück, da `'Apfel'` nicht größer als `'Banane'` ist. Der `<=`-Operator
 gibt `True` zurück, da `'Apfel'` kleiner oder gleich `'Banane'` ist. Der
 `>=`-Operator gibt `False` zurück, da `'Apfel'` nicht größer oder gleich
 `'Banane`' ist.
