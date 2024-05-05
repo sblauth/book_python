@@ -47,9 +47,11 @@ import ColabTurtlePlus.Turtle as turtle
 
 turtle.clearscreen()
 
+robo = turtle.Turtle()
+
 for i in range(4):
-    turtle.forward(100)
-    turtle.right(90)
+    robo.forward(100)
+    robo.right(90)
 ```
 ````
 
@@ -64,11 +66,13 @@ import ColabTurtlePlus.Turtle as turtle
 
 turtle.clearscreen()
 
+robo = turtle.Turtle()
+
 anzahl_seiten = int(input('Bitte geben Sie die Anzahl der Seiten des n-Ecks ein: '))
 
 for i in range(anzahl_seiten):
-    turtle.forward(30)
-    turtle.right(360 / anzahl_seiten)
+    robo.forward(30)
+    robo.right(360 / anzahl_seiten)
 ```
 ````
 

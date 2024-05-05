@@ -211,7 +211,7 @@ Schreiben Sie ein Programm, das in dem Spruch "Zehn Ziegen zogen 10 Kilogramm Zu
 ```python
 spruch = 'Zehn Ziegen zogen 10 Kilogramm Zucker zum Zoo.'
 
-print('Vorher dem Anwenden der .replace()-Methode: ')
+print('Vor dem Anwenden der .replace()-Methode: ')
 print(spruch)
 
 print('Jetzt wird .replace() angewendet: ')

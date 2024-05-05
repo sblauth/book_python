@@ -131,8 +131,13 @@ summe = 0
 for i in range(1, 11):
     summe += i
 
-print("Die Summe der ersten 10 natürlichen Zahlen ist: ", summe)
+print("Die Summe der ersten 10 natürlichen Zahlen ist: ")
+print(summe)
 ```
+
+Dabei bedeutet der `+=` Zuweisungsoperator, dass die Variable auf der linken Seite um den
+Wert auf der rechten Seite der Zuweisung erhöht wird, also ist `summe += i` genau dasselbe
+wie `summe = summe + i`.
 
 Beispiel 2: Nur jedes zweite Mal wird eine Aktion ausgeführt
 

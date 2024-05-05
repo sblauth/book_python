@@ -163,7 +163,7 @@ lauten sehr gut, gut, befriedigend, ausreichend, mangelhaft und ungenügend.
 :class: miniexercise, toggle
 ```python
 # Erzeugung Liste
-noten_liste = ["sehr gut", "gut", "befriedigend", "ausreichend", "mangelhaft", "ungenügend"];
+noten_liste = ["sehr gut", "gut", "befriedigend", "ausreichend", "mangelhaft", "ungenügend"]
 
 # Ausgabe 
 for note in noten_liste:
