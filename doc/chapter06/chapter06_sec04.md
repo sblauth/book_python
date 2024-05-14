@@ -82,7 +82,7 @@ elif bmi <= 25:
 elif bmi <= 30:
     print(f'Sie haben Übergewicht. Ihr BMI lautet {bmi :.1f}.')
 else:
-    print('Sie haben Adipositas, bitte suchen Sie einen Arzt auf. Ihr BMI lautet {bmi :.1f}.', bmi)
+    print(f'Sie haben Adipositas, bitte suchen Sie einen Arzt auf. Ihr BMI lautet {bmi :.1f}.')
 ```
 ````
 
@@ -100,17 +100,17 @@ Testen Sie Ihre Funktion. Lassen Sie einen Tannenbaum mit Blätterhöhe 5 und
 einer Stammhöhe von 3 zeichnen. Darüber hinaus soll ausgegeben werden, wie hoch
 der Tannenbaum insgesamt ist. Beispielhaft könnte Ihr Test folgende Ausgabe
 produzieren:
-<div class="ascii-art">
-    *
-   ***
-  *****
- *******
-*********
-   |||
-   |||
-   |||
+
+    *<br>
+   ***<br>
+  *****<br>
+ *******<br>
+*********<br>
+   |||<br>
+   |||<br>
+   |||<br>
+
 Der Tannenbaum ist insgesamt 8 Zeilen hoch.
-</div>
 ```
 
 ````{admonition} Lösung
@@ -157,7 +157,7 @@ Probieren Sie auch `TOR` aus.
 Tipp: Für R und O dürfen Sie gerne die `circle`-Methode verwenden, siehe
 [Dokumentation
 ColabTurtlePlus](https://larryriddle.agnesscott.org/ColabTurtlePlus/documentation2.html).
-Auch `penup`, `pendown` und `goto` könnten hilfreich sein.
+Auch die Methoden `.penup()`, `.pendown()` und `.goto()` könnten hilfreich sein.
 ```
 
 ````{admonition} Lösung

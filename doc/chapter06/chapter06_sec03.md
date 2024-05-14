@@ -84,7 +84,7 @@ man dies über die Rückgabe und explizite Zuweisung erreichen. Dann ist aber
 jedem Programmier und jeder Programmiererin, die diese Funktion benutzt,
 explizit klar, dass damit der Wert der Variablen geändert wird.
 
-```python
+```{code-cell} ipython3
 # modifizierte Funktion mit Rückgabe
 def erhoehe_um_eins(x):
     x = x + 1
@@ -97,6 +97,24 @@ print(f'Vor der Anwendung der Funktion ist x = {x}.')
 x = erhoehe_um_eins(x)
 print(f'Nach der Anwendung der Funktion ist x = {x}.')
 ```
+
+Achtung: Listen stellen eine Ausnahme von diesem Prinzip dar. Schauen Sie sich zum Beispiel 
+dieses Skript an:
+
+```{code-cell} ipython3
+def entferne_letztes_element(liste):
+    liste.pop()
+
+zahlen = [1, 2, 3, 4, 5]
+print(f"Liste vor dem Funktionsaufruf: {zahlen}")
+entferne_letztes_element(zahlen)
+print(f"Liste nach dem Funktionsaufruf: {zahlen}")
+```
+
+Das liegt daran, dass Listen in Python *mutable*, also veränderbar sind, während
+andere Dateitypen wie Floats und Strings *immutable*, also unveränderlich, sind.
+Deshalb ist immer Vorsicht geboten, wenn Listen an Funktionen übergeben werden.
+Eine sehr ausführliche Erklärung dazu kann man z.B. [hier](https://www.data-science-architect.de/mutable-und-immutable-objects/) finden.
 
 ## Globale Variablen
 

@@ -53,7 +53,7 @@ Person grüßen.
 
 ```{code-cell} ipython3
 def gruesse_ausrichten_mit_parameter(name):
-    print(f'Ich grüße {name}!')
+    print(f'Hallo {name}!')
 ```
 
 Der Aufruf einer Funktion ohne passende Argumente führt nun zu einer
@@ -77,7 +77,7 @@ x = gruesse_ausrichten_mit_parameter('Alice')
 type(x)
 ```
 
-`x` ist vom Typ `NoneType` oder anders ausgedrückt, in der Variablen `x` ist
+`x` ist vom Typ `None` oder anders ausgedrückt, in der Variablen `x` ist
 kein Datentyp gepeichert.
 
 Sind Funktionen ohne Rückgabewert sinnvoll? Ja, denn so können Python-Programme
@@ -91,19 +91,25 @@ Schreiben Sie eine Funktion, die mit Turtle ein Rechteck zeichnet. Die beiden
 Seitenlängen des Rechtecks sollen als Argumente der Funktion übergeben werden.
 Testen Sie Ihre Funktion auch.
 ```
+
+```{code-cell} ipython3
+# Geben Sie nach diesem Kommentar Ihren Code ein:
+
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
 import ColabTurtlePlus.Turtle as turtle
 turtle.clearscreen()
 
-def zeichne_rechteck(seite1, seite2):
-    rechteck = turtle.Turtle()
+def zeichne_rechteck(laenge, breite):
+    robo = turtle.Turtle()
     for i in range(2):
-        rechteck.forward(seite1)
-        rechteck.left(90)
-        rechteck.forward(seite2)
-        rechteck.left(90)
+        robo.forward(laenge)
+        robo.left(90)
+        robo.forward(breite)
+        robo.left(90)
         
 a = 100
 b = 30
@@ -142,7 +148,7 @@ entgegen und gibt einen Rückgabewert zurück.
 
 ```{code-cell} ipython3
 def berechne_quadratzahl(zahl):
-    return zahl * zahl
+    return zahl ** 2
 ```
 
 Jetzt können wir die Funktion ausprobieren.
@@ -157,7 +163,7 @@ Als nächstes kommt ein Beispiel mit zwei Rückgabewerten. Nicht nur die
 Quadratzahl, sondern auch die Kubikzahl soll berechnet werden.
 
 ```{code-cell} ipython3
-def berechne_quadrat_kubik(zahl):
+def berechne_quadrat_und_kubik(zahl):
     quadrat = zahl**2
     kubik = zahl**3
     return quadrat, kubik
@@ -167,7 +173,7 @@ Und erneut testen wir die Funktion.
 
 ```{code-cell} ipython3
 for x in range(1,6):
-    x_hoch_2, x_hoch_3 = berechne_quadrat_kubik(x)
+    x_hoch_2, x_hoch_3 = berechne_quadrat_und_kubik(x)
     print(f'x = {x}, x^2 = {x_hoch_2}, x^3 = {x_hoch_3}')
 ```
 
@@ -178,24 +184,30 @@ beiden Seitenlängen als Argumente der Funktion übergeben werden. Die Funktion
 soll den Umfang des Rechtecks und den Flächeninhalt zurückgeben. Lassen Sie
 anschließend Umfang und Flächeninhalt ausgeben.
 ```
+
+```{code-cell} ipython3
+# Geben Sie nach diesem Kommentar Ihren Code ein:
+
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
 import ColabTurtlePlus.Turtle as turtle
 turtle.clearscreen()
 
-def zeichne_rechteck(seite1, seite2):
+def zeichne_rechteck(laenge, breite):
     # Zeichnung des Rechecks
-    rechteck = turtle.Turtle()
+    robo = turtle.Turtle()
     for i in range(2):
-        rechteck.forward(seite1)
-        rechteck.left(90)
-        rechteck.forward(seite2)
-        rechteck.left(90)
+        robo.forward(laenge)
+        robo.left(90)
+        robo.forward(breite)
+        robo.left(90)
         
     # Berechnung Umfang und Flächeninhalt
-    umfang = 2 * seite1 + 2 * seite2
-    flaeche = seite1 * seite2
+    umfang = 2 * laenge + 2 * breite
+    flaeche = laenge * breite
     
     # Rückgabe
     return umfang, flaeche
@@ -203,7 +215,7 @@ def zeichne_rechteck(seite1, seite2):
 # Test der Funktion      
 a = 100
 b = 30
-U,A = zeichne_rechteck(a,b)
+U, A = zeichne_rechteck(a,b)
 print(f'Der Umfang ist {U:.2f} Längeneinheiten, der Flächeninhalt des Rechtecks ist {A:.2f} Flächeneinheiten.')
 ```
 ````

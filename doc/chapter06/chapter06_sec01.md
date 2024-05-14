@@ -54,7 +54,7 @@ rueckgabewert = funktion( argument1, argument2, ... )
 ```
 
 Eine Funktion wird benutzt, indem man den Namen der Funktion und dann in runden
-Klammern ihre **Parameter** als Liste hinschreibt. Die konkreten Parameter einer
+Klammern ihre **Parameter** mit Komma getrennt hinschreibt. Die konkreten Parameter einer
 Funktion beim Aufruf werden die **Argumente der Funktion** genannt. Welche
 Argumente für eine Funktion verwendet werden dürfen, hängt von der
 Implementierung der Funktion ab.
@@ -125,6 +125,12 @@ for i in range(7):
 :class: miniexercise
 Schreiben Sie eine Funktion, die mit Turtle ein Rechteck zeichnet. Testen Sie Ihre Funktion auch.
 ```
+
+```{code-cell} ipython3
+# Geben Sie nach diesem Kommentar Ihren Code ein:
+
+```
+
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
@@ -132,12 +138,12 @@ import ColabTurtlePlus.Turtle as turtle
 turtle.clearscreen()
 
 def zeichne_rechteck():
-    rechteck = turtle.Turtle()
+    robo = turtle.Turtle()
     for i in range(2):
-        rechteck.forward(100)
-        rechteck.left(90)
-        rechteck.forward(50)
-        rechteck.left(90)
+        robo.forward(100)
+        robo.left(90)
+        robo.forward(50)
+        robo.left(90)
         
 zeichne_rechteck()
 ```
