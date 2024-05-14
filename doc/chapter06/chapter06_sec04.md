@@ -101,14 +101,17 @@ einer Stammhöhe von 3 zeichnen. Darüber hinaus soll ausgegeben werden, wie hoc
 der Tannenbaum insgesamt ist. Beispielhaft könnte Ihr Test folgende Ausgabe
 produzieren:
 
-    *<br>
-   ***<br>
-  *****<br>
- *******<br>
-*********<br>
-   |||<br>
-   |||<br>
-   |||<br>
+<pre>
+    *
+   ***
+  *****
+ *******
+*********
+   |||
+   |||
+   |||
+
+</pre>
 
 Der Tannenbaum ist insgesamt 8 Zeilen hoch.
 ```
