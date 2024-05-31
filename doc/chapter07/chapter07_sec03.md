@@ -116,13 +116,18 @@ lottozahlen = np.random.randint(1, 50, 6)
 # Ausgabe
 print(lottozahlen)
 ```
+
+Nein, damit könnte die Ziehung der Lottozahlen nicht simuliert werden, weil
+nicht sichergestellt ist, dass keine Zahl doppelt vorkommt.
+
 ````
 
 ## Normalverteilte Zufallszahlen
 
 Eine normalverteilte Zufallszahl folgt der sogenannten Normalverteilung oder
 Gaußschen Verteilung. Das ist eine Wahrscheinlichkeitsverteilung, die durch ihr
-Glockenkurven-Diagramm bekannt ist.
+Glockenkurven-Diagramm bekannt ist. Mehr Details zur Normalverteilung finden Sie
+z.B. im [dazugehörigen Wikipedia Artikel](https://de.wikipedia.org/wiki/Normalverteilung).
 
 Die Normalverteilung ist durch zwei Parameter definiert: Den Mittelwert (oder
 Erwartungswert) und die Standardabweichung. Der Mittelwert ist der Wert, um den

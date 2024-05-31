@@ -45,7 +45,7 @@ hat folgende Struktur:
 Die bedingte Wiederholung wird mit dem Schlüsselwort `while` eingeleitet. Dann
 folgt die Bedingung, die mit einem `:` abgeschlossen wird. Alle Anweisungen, die
 wiederholt werden sollen, werden eingerückt. Diesen Teil nennt man das
-Schleifeninnere, die Zeile `while Bedingung:` nennt man den Schleifenkopf. 
+Schleifeninnere oder den Schleifenkörper, die Zeile `while Bedingung:` nennt man den Schleifenkopf. 
 
 ```{warning}
 While-Schleifen sind ein mächtiges Werkzeug in Python, aber es ist wichtig, sie
@@ -54,7 +54,8 @@ dass die Schleife **unendlich** läuft, was zu Problemen führen kann.
 ```
 
 Um auf das Beispiel mit dem Wasserkocher zurückzukommen ... auch wenn wir jetzt
-keinen echten Temperatursensor haben, würde eine while-Schleife
+keinen echten Temperatursensor haben, können wir mit einer while-Schleife das
+Verhalten des Wasserkochers nachahmen:
 
 ```{code-cell} ipython3
 temperatur = 20
@@ -67,7 +68,7 @@ print('Das Wasser ist fertig gekocht!')
 
 ```{admonition} Mini-Übung
 :class: miniexercise
-Schreiben Sie ein Programm, das einen Countdown von 10 nach 0 implementiert.
+Schreiben Sie ein Programm, das einen Countdown von 10 nach 0 implementiert. Nutzen Sie dazu eine `while` Schleife.
 ```
 ```{code-cell} ipython
 # Hier Ihr Code

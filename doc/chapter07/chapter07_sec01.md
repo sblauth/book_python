@@ -51,7 +51,7 @@ mankaufen, wenn man kein Kind ist, also wenn
 $$\text{nicht} \left( \text{Alter} < 6\right).$$
 
 Gut, letzteres könnte man natürlicher einfacher mit $\text{Alter} \geq 6$
-ausdrücken, aber das klappt auch nicht bei jeder Bedingung.
+ausdrücken, aber das klappt auch nicht so einfach bei jeder Bedingung.
 
 Im Folgenden beschäftigen wir uns daher mit der Verknüpfung von booleschen
 Ausdrücken. Dieses Fachgebiet nennt man auch boolsche Algebra oder digitale
@@ -116,7 +116,7 @@ gehst Du in die Grundschule.”
 :class: miniexercise, toggle
 ```python
 # Eingabe
-alter = int(input('Wie alt sind Sie?'))
+alter = int(input('Wie alt bist Du?'))
 
 # Verarbeitung und Ausgabe
 if (6 <= alter) and (alter <= 10):
@@ -245,28 +245,28 @@ ausprobieren, also beispielsweise `True and True` eingeben.
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
-# wahr UND wahr
+# wahr UND wahr = wahr
 True and True
 
-# wahr ODER falsch
+# wahr ODER falsch = wahr
 True or False
 
-# NICHT wahr
+# NICHT wahr = falsch
 not True
 
-# falsch ODER wahr
+# falsch ODER wahr = wahr
 False or True
 
-# wahr ODER (NICHT falsch)
+# wahr ODER (NICHT falsch) = wahr
 True or (not False)
 
-# (NICHT wahr) UND falsch
+# (NICHT wahr) UND falsch = falsch
 (not True) and False
 
-# NICHT (wahr ODER falsch)
+# NICHT (wahr ODER falsch) = falsch
 not (True or False)
 
-# (NICHT falsch) ODER (falsch UND falsch)
+# (NICHT falsch) ODER (falsch UND falsch) = wahr
 (not False) or (False and False)
 ```
 ````
