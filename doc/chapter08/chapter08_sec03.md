@@ -181,7 +181,7 @@ an Toren, die ein oder mehrere Spieler der Top7 2020/21 geschossen haben, war
 41. (Wahrscheinlich wissen Sie aber, dass nur ein Spieler 41 Tore geschafft hat,
 natürlich Lewandowski).
 
-Von Verteidigern wird nicht erwartet, Tore zu schieen, sondern von Stürmern. Was
+Von Verteidigern wird nicht erwartet, Tore zu schießen, sondern von Stürmern. Was
 ist denn das Minimum an Toren bei den Stürmern? Die Positionen sind in der
 Spalte 'Position'. Dabei bedeutet FW = forward = Stürmer, MF = mid field =
 Mittelfeld, DF = defensive = Verteidigung und GK = goalkeeper = Torwart. Bei
@@ -196,7 +196,7 @@ print('Stürmer')
 print(stuermer)
 
 print('==============')
-print('Minimale Tore: {}'.format(stuermer.min()))
+print(f'Minimale Tore: {stuermer.min()}')
 ```
 
 ## Quantil mit quantile

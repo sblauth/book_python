@@ -125,7 +125,7 @@ print(stundenplan)
 
 Bei Auswertung von Messungen ist aber der häufigste Fall der, dass Daten in Form
 einer Tabelle vorliegen. Ein DataFrame-Objekt entspricht einer Tabelle, wie man
-sie beispielsweise von Excel, LibreOffice oder Numbers kennt. Sowohl Zeile als
+sie beispielsweise von Excel, LibreOffice oder Numbers kennt. Sowohl Zeilen als
 auch Spalten sind indiziert. Typischerweise werden die Daten in der Tabelle
 zeilenweise angeordnet. Damit ist gemeint, dass jede Zeile einen Datensatz
 darstellt und die Spalten die Eigenschaften speichern.
