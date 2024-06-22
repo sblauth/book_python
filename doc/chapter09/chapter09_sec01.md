@@ -186,7 +186,7 @@ plt.title('Mini-Übung')
 
 ## Balkendiagramme
 
-Mit der Funktion `bar()` kann ein Balkendiagramm erstellt werden. Nehmen wir mal
+Mit der Funktion `plt.bar()` kann ein Balkendiagramm erstellt werden. Nehmen wir mal
 an, wir möchten auswerten, wie viele Nutzer/innen in campUAS auf die Jupyter
 Notebooks zum Download zugegriffen haben:
 

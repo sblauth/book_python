@@ -39,7 +39,7 @@ beispielsweise so aussehen:
 Ein Histogramm ist eine Visualisierung einer solchen Tabelle. Dabei werden in
 der Regel Balken benutzt. Auf der x-Achse sind also die Merkmale aufgetragen und
 auf der y-Achse finden wir die Anzahl der Merkmale in dem Datensatz. Die Anzahl
-kann dabei in absoluten Zahlen angegeben werden oder in relativen (Prozent).  
+kann dabei in absoluten Zahlen angegeben werden oder in relativen (Prozent).
 
 So sieht das Histogramm des Notenspiegels aus:
 
@@ -170,7 +170,7 @@ dokumentiert. Kurz zusammengefasst bedeuten die drei Optionen
   diesem Fall wäre der 1. Behälter das Intervall [1,2), der 2. Behälter das
   Intervall [2,3), der 3. Behälter [3,4]. Bei vier Zahlen in der Liste erhalten
   wir drei Intervalle, wobei die ersten Intervalle immer rechts offen sind und
-  nur das letzte Intervall ist geschlossen.   
+  nur das letzte Intervall ist geschlossen.
 * *align=*: Die Option `align` kann die Werte 'left', 'mid' und 'right'
   annehmen. Verwendet man die Option nicht, so wird automatisch `align='mid'`
   benutzt. Mit dieser Option wird die horizontale Ausrichtung der Balken
@@ -230,6 +230,11 @@ Probieren Sie z.B. N = 10, 100, 1000 oder 100000000 aus. Ab wann erkennen Sie
 die Gauß-Kurve? Gibt es eine Anzahl N von Punkten, ab der sich die Kurve nicht
 mehr ändert?
 ```
+
+```{code-cell} ipython3
+# Hier Ihr Code
+```
+
 ```{admonition} Lösung
 :class: miniexercise, toggle
 Für eine kleine Anzahl von Zufallszahlen wie beispielsweise $N=10$ oder $N=100$
@@ -246,6 +251,11 @@ Wir bleiben bei $N=1000$ Zufallszahlen, aber spielen mit der Anzahl der Bins und
 der Bingröße herum. Verändern Sie die Anzahl der Bins von 6, 10, 50, 100, 250,
 1000, 10000. Was beobachten Sie?
 ```
+
+```{code-cell} ipython3
+# Hier Ihr Code
+```
+
 ```{admonition} Lösung
 :class: miniexercise, toggle
 Wird die Anzahl der Bins klein gewählt, so sind die Teilintervalle größer. Somit
