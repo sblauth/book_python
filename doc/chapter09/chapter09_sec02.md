@@ -29,7 +29,7 @@ $(x_3,y_3)$ usw. durch Linien verbunden, sondern jeder Punkt selbst wird an der
 Stelle seiner Koordinaten eingezeichnet. Ob dazu ein Punkt, Kreis, Dreieck oder
 Quadrat oder ein anderes Symbol verwendet wird, bleibt dem Anwender überlassen.
 Streudiagramme heißen im Englischen Scatter-Plot, daher lautet die entsprechende
-Matplotlib-Funktion auch `scatter()`.
+Matplotlib-Funktion auch `plt.scatter()`.
 
 ```{code-cell} ipython3
 import numpy as np
@@ -41,7 +41,7 @@ y = np.sin(x)
 
 # scatter plot
 plt.figure()
-plt.scatter(x,y);
+plt.scatter(x,y)
 ```
 
 Über die Option `marker=` lässt sich das Symbol einstellen, mit dem das
@@ -60,7 +60,7 @@ y = np.sin(x)
 
 # scatter plot
 fig, ax = plt.subplots()
-ax.scatter(x,y, marker='x');
+ax.scatter(x,y, marker='x')
 ```
 
 Für bekannte Funktionen wie Sinus oder Kosinus würde man Liniendiagramme
@@ -79,13 +79,13 @@ y2 = np.random.uniform(15,23,7) # Zufallszahlen, um Temperaturmessung zu simulie
 # scatter plots
 plt.figure()
 plt.scatter(x, y1, marker='+')
-plt.scatter(x, y2, marker='.');
+plt.scatter(x, y2, marker='.')
 ```
 
-Dann ist es aber auch gut, die Visualisierung zu beschriften. Dazu kennzeichnet
+Dann ist es aber auch notwendig, die Visualisierung zu beschriften. Dazu kennzeichnet
 man jeden einzelnen Plot-Aufruf mit einem sogenannten Label, z.B.
 `plt.scatter(x,y1, label='Messung1')`. Zuletzt verwendet man die Funktion
-`legend()`, die eine Legende mit allen Label-Einträgen erzeugt, bei denen die
+`plt.legend()`, die eine Legende mit allen Label-Einträgen erzeugt, bei denen die
 Farben der Kurven und die Marker korrekt zu den Namen (Labels) zugeordnet
 werden.
 
@@ -100,7 +100,7 @@ plt.figure()
 plt.scatter(x, y1, marker='+', label='Frankfurt')
 plt.scatter(x, y2, marker='.', label='Offenbach')
 plt.legend()
-plt.title('Durchschnittstemperatur');
+plt.title('Durchschnittstemperatur')
 ```
 
 ```{admonition} Mini-Übung
@@ -127,7 +127,7 @@ y = np.random.normal(0, 1, 50)
 
 # plot
 plt.figure()
-plt.scatter(x,y, c='red', marker='D')
+plt.scatter(x,y, color='red', marker='D')
 ```
 ````
 
