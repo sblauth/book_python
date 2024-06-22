@@ -114,7 +114,7 @@ plt.figure()
 plt.plot(x,y)
 plt.xlabel('Zeit in Sekunden')
 plt.ylabel('Stromstärke in Ampere')
-plt.title('Wechselstrom');
+plt.title('Wechselstrom')
 ```
 
 Zuletzt soll unser Plot gespeichert werden. Dazu wird die Funktion `plt.savefig()`
@@ -133,7 +133,7 @@ Die folgende Anweisung speichert das Liniendiagramm unter dem Dateinamen
 von 300 dpi, also 300 Punkten pro Inch.
 
 ```{code-cell} ipython3
-plt.savefig('plot_stromstaerke.png', dpi=300);
+plt.savefig('plot_stromstaerke.png', dpi=300)
 ```
 
 ```{admonition} Mini-Übung
@@ -178,7 +178,7 @@ plt.figure()
 plt.plot(x5,y5)
 plt.xlabel('x-Achse')
 plt.ylabel('y-Achse')
-plt.title('Mini-Übung');
+plt.title('Mini-Übung')
 ```
 ````
 
@@ -210,7 +210,7 @@ plt.figure()
 plt.bar(x,y)
 plt.xlabel('Woche')
 plt.ylabel('Anzahl Nutzer/innen')
-plt.title('Zugriff auf Jupyter Notebooks zum Download SoSe 2024');
+plt.title('Zugriff auf Jupyter Notebooks zum Download SoSe 2024')
 ```
 
 Farben können mit dem optionalen Argument `color=` eingestellt werden. Dabei
@@ -233,7 +233,7 @@ plt.figure()
 plt.bar(x,y, color='gray')
 plt.xlabel('Woche')
 plt.ylabel('Anzahl Nutzer/innen')
-plt.title('Zugriff auf Jupyter Notebooks zum Download SoSe 2024');
+plt.title('Zugriff auf Jupyter Notebooks zum Download SoSe 2024')
 ```
 
 ```{admonition} Mini-Übung
@@ -269,7 +269,7 @@ plt.figure()
 plt.bar(x,y, color='black')
 plt.xlabel('Woche')
 plt.ylabel('Zugriffe')
-plt.title('Zugriffszahlen MATLAB Live Skripte SoSe 21');
+plt.title('Zugriffszahlen MATLAB Live Skripte SoSe 21')
 ```
 ````
 
