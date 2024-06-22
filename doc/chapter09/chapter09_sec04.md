@@ -55,7 +55,7 @@ plt.figure()
 plt.bar(x,y)
 plt.xlabel('Note')
 plt.ylabel('Anzahl')
-plt.title('Klassenarbeit');
+plt.title('Klassenarbeit')
 ```
 
 Diese Analysemethode wird sehr häufig eingesetzt. Daher stellen alle drei Module
@@ -71,7 +71,7 @@ Pandas-Histogramm bildet.
 Um die Optionen des Histogramms kennenzulernen, lassen wir jetzt Matplotlib
 selbst das Histogramm, also den Notenspiegel berechnen und visualisieren. Zuerst
 notieren wir die Einzelnoten, die zu dem obigen Notenspiegel gehören. Dann
-wenden wir die Funktion `hist()` an.
+wenden wir die Funktion `plt.hist()` an.
 
 
 ```{code-cell} ipython3
@@ -83,7 +83,7 @@ plt.figure()
 plt.hist(noten)
 plt.xlabel('Note')
 plt.ylabel('Anzahl')
-plt.title('Klassenarbeit');
+plt.title('Klassenarbeit')
 ```
 
 Warum sind bei den Noten 1 bis 4 Balken mit Abstand zueinander zu sehen, aber
@@ -135,7 +135,7 @@ plt.figure()
 plt.hist(noten, bins=teilintervalle)
 plt.xlabel('Note')
 plt.ylabel('Anzahl')
-plt.title('Klassenarbeit');
+plt.title('Klassenarbeit')
 ```
 
 Die Balken werden jetzt über jedes Teilintervall platziert, so dass sie wieder
@@ -156,7 +156,7 @@ plt.figure()
 plt.hist(noten, bins=teilintervalle, rwidth=0.8, align='left')
 plt.xlabel('Note')
 plt.ylabel('Anzahl')
-plt.title('Klassenarbeit');
+plt.title('Klassenarbeit')
 ```
 
 Die Optionen sind ausführlich in der
@@ -217,7 +217,7 @@ zufallszahlen = zufallszahlen_generator.randn(N)
 
 # Histogramm
 plt.figure()
-plt.hist(zufallszahlen, bins=100);
+plt.hist(zufallszahlen, bins=100)
 ```
 
 Die normalverteilten Zufallszahlen zeigen die typische Gauß-Verteilung, die auch
