@@ -53,7 +53,7 @@ plt.bar(x,y)
 plt.xticks(rotation=45, ha='right')
 plt.xlabel('Verein')
 plt.ylabel('Wert')
-plt.title('Erste Bundesliga');
+plt.title('Erste Bundesliga')
 
 # 2. Bundesliga
 x = zweite_bundesliga.index
@@ -64,7 +64,7 @@ plt.bar(x,y)
 plt.xticks(rotation=45, ha='right')
 plt.xlabel('Verein')
 plt.ylabel('Wert')
-plt.title('Zweite Bundesliga');
+plt.title('Zweite Bundesliga')
 
 # 3. Bundesliga
 x = dritte_bundesliga.index
@@ -75,7 +75,7 @@ plt.bar(x,y)
 plt.xticks(rotation=45, ha='right')
 plt.xlabel('Verein')
 plt.ylabel('Wert')
-plt.title('Dritte Bundesliga');
+plt.title('Dritte Bundesliga')
 ```
 ````
 
@@ -114,7 +114,7 @@ plt.axhline(mittelwert, color='red')
 plt.xticks(rotation=45, ha='right')
 plt.xlabel('Verein')
 plt.ylabel('Kadergröße')
-plt.title('Erste Bundesliga');
+plt.title('Erste Bundesliga')
 
 # Visualisierung 2. Bundesliga
 x = zweite_bundesliga.index
@@ -128,7 +128,7 @@ plt.axhline(mittelwert, color='red')
 plt.xticks(rotation=45, ha='right')
 plt.xlabel('Verein')
 plt.ylabel('Kadergröße')
-plt.title('Zweite Bundesliga');
+plt.title('Zweite Bundesliga')
 
 # Visualisierung 3. Liga
 x = dritte_bundesliga.index
@@ -142,7 +142,7 @@ plt.axhline(mittelwert, color='red')
 plt.xticks(rotation=45, ha='right')
 plt.xlabel('Verein')
 plt.ylabel('Kadergröße')
-plt.title('Dritte Bundesliga');
+plt.title('Dritte Bundesliga')
 ```
 ````
 
@@ -221,7 +221,7 @@ plt.figure()
 plt.hist(liste_entfernungen, bins=25)
 plt.xlabel('Entfernung zum Ursprung in px')
 plt.ylabel('Häufigkeit')
-plt.title('Analyse der Random Walks');
+plt.title('Analyse der Random Walks')
 ```
 Das Histogramm könnte beispielhaft so aussehen:
 
