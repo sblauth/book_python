@@ -41,7 +41,7 @@ y = [4, 1, 0, 1, 4]
 
 Danach lassen wir den Python-Interpreter diese Werte zeichnen. Dazu benötigen
 wir das Modul `matplotlib`, genauer gesagt nur einen Teil dieses Moduls namens
-`pylab`. Daher laden wir es zuerst mit der typischen Abkürzung `plt`.
+`pyplot`. Daher laden wir es zuerst mit der typischen Abkürzung `plt`.
 
 ```{code-cell} ipython3
 import matplotlib.pyplot as plt
@@ -64,9 +64,8 @@ Trotz der Nachteile werden wir in dieser Vorlesung die zustandsorientierte
 Schnittstelle benutzen, um den Vorteil auszunutzen, MATLAB-Syntax verwenden zu
 können.
 
-Zunächst erzeugen wir das Grafik-Objekt bestehend aus einer Figure (=Grafik als
-Ganzes) und Axes (=Achsen) explizit mit der Funktion ``plt.subplots()``und
-speichern diese in entsprechenden Variablen. Dann verwenden wir Methoden, das
+Zunächst erstellen wir eine leere Figure (=Grafik als Ganzes) mit dem Befehl
+`plt.figure()`. Anschließend verwenden wir die `plt.plot()` Funktion, um das
 Grafikobjekt zu manipulieren. Beispielsweise fügen wir den Achsen einen
 Linienplot und Beschriftungen hinzu.
 
@@ -98,11 +97,11 @@ x = np.linspace(-2, 2, 100)
 y = x**2
 
 plt.figure()
-plt.plot(x,y);
+plt.plot(x,y)
 ```
 
-Nächstes Thema, Beschriftungen. Mit den Funktionen `xlabel()` und
-`ylabel()` beschriften Sie die x- und y-Achse. Mit `title()` wird der
+Nächstes Thema, Beschriftungen. Mit den Funktionen `plt.xlabel()` und
+`plt.ylabel()` beschriften Sie die x- und y-Achse. Mit `plt.title()` wird der
 Titel gesetzt.
 
 ```{code-cell} ipython3
@@ -118,7 +117,7 @@ plt.ylabel('Stromstärke in Ampere')
 plt.title('Wechselstrom');
 ```
 
-Zuletzt soll unser Plot gespeichert werden. Dazu wird die Funktion `savefig()`
+Zuletzt soll unser Plot gespeichert werden. Dazu wird die Funktion `plt.savefig()`
 verwendet. Das erste Argument der Funktion ist ein String mit dem Dateinamen,
 unter dem die Grafik abgespeichert werden soll. Die Dateiendung wird von
 Matplotlib automatisch dazu benutzt, das Grafikformat festzulegen. Es stehen
@@ -199,7 +198,7 @@ Notebooks zum Download zugegriffen haben:
 | 5 | 10 |
 | 6 | 9  |
 
-Dann wird das Balkendiagramm mit folgenden Code erzeugt:
+Dann wird das Balkendiagramm mit der Funktion `plt.bar()` in folgendem Code erzeugt:
 
 ```{code-cell} ipython3
 # data
@@ -211,7 +210,7 @@ plt.figure()
 plt.bar(x,y)
 plt.xlabel('Woche')
 plt.ylabel('Anzahl Nutzer/innen')
-plt.title('Zugriff auf Jupyter Notebooks zum Download WiSe 2021/22');
+plt.title('Zugriff auf Jupyter Notebooks zum Download SoSe 2024');
 ```
 
 Farben können mit dem optionalen Argument `color=` eingestellt werden. Dabei
@@ -234,7 +233,7 @@ plt.figure()
 plt.bar(x,y, color='gray')
 plt.xlabel('Woche')
 plt.ylabel('Anzahl Nutzer/innen')
-plt.title('Zugriff auf Jupyter Notebooks zum Download WiSe 2021/22');
+plt.title('Zugriff auf Jupyter Notebooks zum Download SoSe 2024');
 ```
 
 ```{admonition} Mini-Übung
@@ -270,7 +269,7 @@ plt.figure()
 plt.bar(x,y, color='black')
 plt.xlabel('Woche')
 plt.ylabel('Zugriffe')
-plt.title('Zugriffszahlen MATLAB Live Skripte SoSe 22');
+plt.title('Zugriffszahlen MATLAB Live Skripte SoSe 21');
 ```
 ````
 
