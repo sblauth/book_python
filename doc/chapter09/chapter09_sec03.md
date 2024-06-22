@@ -38,7 +38,7 @@ können mit
 * ``.index`` auf den Zeilenindex und
 * ``.columns`` auf den Spaltenindex
 
-zugreifen. Übrigens, ``.values`` liefert die Werten in der Tabelle als
+zugreifen. Übrigens, ``.values`` liefert die Werte in der Tabelle als
 NumPy-Array zurück. Aber das brauchen wir für die Visualisierung nicht, denn die
 Tabellendaten können direkt viualisiert werden. 
 
@@ -80,7 +80,7 @@ plt.figure()
 plt.bar(x,y)
 plt.xlabel('Spieler')
 plt.ylabel('Alter')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 ```
 
 Leider kann man die Spielernamen nicht mehr lesen. Wir können händisch in das
@@ -96,13 +96,13 @@ plt.ylabel('Alter')
 plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 
 # Rotation der xticks um 45 Grad und horizontal alignment rechts
-plt.xticks(rotation = 45, ha='right');
+plt.xticks(rotation = 45, ha='right')
 ```
 
 ```{admonition} Mini-Übung
 :class: miniexercise
-Visualisieren Sie die Anzahl der Minuten, die ein Spieler der Eintracht
-Frankfurt auf dem Platz stand. Beschriften Sie auch x- und y-Achse und geben Sie
+Visualisieren Sie die Anzahl der Minuten, die die Spieler der Eintracht
+Frankfurt auf dem Platz standen. Beschriften Sie auch x- und y-Achse und geben Sie
 der Grafik einen aussagekräftigen Titel.
 ```
 
@@ -113,6 +113,9 @@ der Grafik einen aussagekräftigen Titel.
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
+filter = data.loc[:, 'Club'] == 'Eintracht Frankfurt'
+data_eintracht_frankfurt = data.loc[filter, :]
+
 # data
 x = data_eintracht_frankfurt.index
 y = data_eintracht_frankfurt.loc[:, 'Mins']
@@ -123,7 +126,7 @@ plt.bar(x,y)
 plt.xlabel('Spieler')
 plt.xticks(rotation = 45, ha='right')
 plt.ylabel('Minuten')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 ```
 ````
 
@@ -156,13 +159,13 @@ plt.figure()
 plt.bar(x,y)
 plt.xlabel('Spieler')
 plt.ylabel('Alter')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 
 # Rotation der xticks um 45 Grad und horizontal alignment rechts
 plt.xticks(rotation = 45, ha='right')
 
 # horizontale Linie
-plt.axhline(mittelwert_alter, color='red');
+plt.axhline(mittelwert_alter, color='red')
 ```
 
 ```{admonition} Mini-Übung
@@ -177,6 +180,9 @@ Mini-Übung um eine horizontale schwarze Linie, die den Mittelwert visualisiert.
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
+filter = data.loc[:, 'Club'] == 'Eintracht Frankfurt'
+data_eintracht_frankfurt = data.loc[filter, :]
+
 x = data_eintracht_frankfurt.index
 y = data_eintracht_frankfurt.loc[:, 'Mins']
 min_durchschnitt = y.mean()
@@ -188,7 +194,7 @@ plt.axhline(min_durchschnitt, color='black')
 plt.xlabel('Spieler')
 plt.xticks(rotation = 45, ha='right')
 plt.ylabel('Minuten')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 ```
 ````
 
@@ -210,7 +216,7 @@ Hilfeseite
 # data
 x = data_eintracht_frankfurt.index
 y = data_eintracht_frankfurt.loc[:, 'Age']
-standardabweichung_alter = data_eintracht_frankfurt.loc[:, 'Age'].std()
+standardabweichung_alter = y.std()
 
 # plot data
 plt.figure()
@@ -220,7 +226,7 @@ plt.errorbar(x, y, yerr=standardabweichung_alter)
 plt.xlabel('Spieler')
 plt.xticks(x, rotation = 45, ha='right')    # um 45 Grad
 plt.ylabel('Alter')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 ```
 
 Die Grafik sieht irritierend aus, da die Altersangben der Spieler verbunden
@@ -232,7 +238,7 @@ die Messwerte als Kreise dargestellt.
 # data
 x = data_eintracht_frankfurt.index
 y = data_eintracht_frankfurt.loc[:, 'Age']
-standardabweichung_alter = data_eintracht_frankfurt.loc[:, 'Age'].std()
+standardabweichung_alter = y.std()
 
 # plot data
 plt.figure()
@@ -242,7 +248,7 @@ plt.errorbar(x, y, yerr=standardabweichung_alter, fmt='o')
 plt.xlabel('Spieler')
 plt.xticks(x, rotation = 45, ha='right')    # um 45 Grad
 plt.ylabel('Alter')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 ```
 
 ```{admonition} Mini-Übung
@@ -256,6 +262,9 @@ Frankfurt durchschnittlich im Einsatz war.
 ````{admonition} Lösung
 :class: miniexercise, toggle
 ```python
+filter = data.loc[:, 'Club'] == 'Eintracht Frankfurt'
+data_eintracht_frankfurt = data.loc[filter, :]
+
 x = data_eintracht_frankfurt.index
 y = data_eintracht_frankfurt.loc[:, 'Mins']
 min_standardabweichung = y.std()
@@ -266,7 +275,7 @@ plt.errorbar(x,y, yerr=min_standardabweichung, fmt='o')
 plt.xlabel('Spieler')
 plt.xticks(rotation = 45, ha='right')
 plt.ylabel('Minuten')
-plt.title('Spielerdaten Eintracht Frankfurt 20/21');
+plt.title('Spielerdaten Eintracht Frankfurt 20/21')
 ```
 ````
 
