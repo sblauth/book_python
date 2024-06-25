@@ -59,8 +59,8 @@ x = np.linspace(-2*np.pi, 2*np.pi, 50)
 y = np.sin(x)
 
 # scatter plot
-fig, ax = plt.subplots()
-ax.scatter(x,y, marker='x')
+plt.figure()
+plt.scatter(x,y, marker='x')
 ```
 
 Für bekannte Funktionen wie Sinus oder Kosinus würde man Liniendiagramme
