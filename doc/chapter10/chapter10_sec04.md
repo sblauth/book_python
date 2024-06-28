@@ -37,7 +37,7 @@ Gegeben ist der folgende Code mit Zeilennummern, um Messdaten zu visualisieren. 
 ````{admonition} Lösung
 :class: miniexercise, toggle
 * Zeile 6: Listen dürfen nicht quadriert werden.
-* Zeile 9: Der Aufruf plt.figure() fürht zu einer Fehlermeldung, da Matplotlib nicht importiert wurde.
+* Zeile 9: Der Aufruf plt.figure() führt zu einer Fehlermeldung, da Matplotlib nicht importiert wurde.
 * Zeile 14: plt.title() ist falsch geschrieben.
 ```python
 import matplotlib.pyplot as plt
@@ -157,7 +157,7 @@ plt.title('Entwicklung der Studierendenzahlen Frankfurt UAS');
 :class: miniexercise
 Laden Sie die Biersteuerstatistik
 ([Download](https://nextcloud.frankfurt-university.de/s/Ejc2LFEW3Hz3mA9)) herunter.
-1. Importieren Sie die Daten mit Pandas (8 Zeilen müssen Úbersprungen werden).
+1. Importieren Sie die Daten mit Pandas (8 Zeilen müssen Übersprungen werden).
 Lassen Sie sich einen Überblick anzeigen. Was enthält die Tabelle?
 2. Filtern Sie die Tabelle nach den Jahren 2020, 2021 und 2022 lassen Sie den
 Absatz von Bier in Hektolitern pro Monat visualisieren.
