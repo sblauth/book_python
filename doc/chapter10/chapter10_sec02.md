@@ -14,6 +14,8 @@ kernelspec:
 
 # 10.2 Lineare Regression mit polyfit und polyval
 
+In diesem Kapitel nutzen wir NumPy um Regressionskoeffizienten zu bestimmen.
+
 ## Lernziele
 
 ```{admonition} Lernziele
@@ -102,7 +104,7 @@ plt.title('Künstliche Messdaten mit linearem Zusammenhang');
 ## Regressionsgerade aus Koeffizienten mit polyval aufstellen
 
 Eine weitere Funktion aus dem NumPy-Modul ist die Funktion `polyval()`. Die
-polyval-Funktion wird dazu benutzt, ein Polynom aufzustellen. Der Aufruf der
+polyval-Funktion wird dazu benutzt, ein Polynom (an einer Stelle) auszuwerten. Der Aufruf der
 polyval-Funktion sieht prinzipiell so aus:
 
 ```python
