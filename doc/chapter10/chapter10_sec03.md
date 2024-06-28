@@ -14,6 +14,10 @@ kernelspec:
 
 # 10.3 Polynomiale Regression
 
+Nachdem wir im vorigen Abschnitt gelernt haben, wie man eine lineare
+Regression durchführt, widmen wir uns nun polynomiellen Fits mit 
+höherer Ordnung.
+
 ## Lernziele
 
 ```{admonition} Lernziele
@@ -150,7 +154,7 @@ plt.xlabel('Ursache')
 plt.ylabel('Wirkung')
 plt.title('Künstliche Messdaten')
 
-x_plot = np.linspace(-1,5)
+x_plot = np.linspace(-1,5, 200)
 
 for grad in [1, 2, 3, 4]:
   # berechne Regressionspolynom
