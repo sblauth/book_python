@@ -73,7 +73,7 @@ gekennzeichnet, das Modell in rot.
 Zu einer Regressionsanalyse gehört mehr als nur die Regressionskoeffizienten zu
 bestimmen. Daten müssen vorverarbeitet werden, unter mehreren unabhängigen
 Variablen (Inputs) müssen diejenigen ausgewählt werden, die tatsächlich die
-Wirkung erklären. Das lineare Regressionsmodell muss trainiert werden, d.h. die
+Wirkung erklären. Das lineare Regressionsmodell muss gefittet werden, d.h. die
 Parameter geschätzt werden und natürlich muss das Modell dann auch getestet
 werden. Bei den meisten Regressionsmodellen gibt es noch Modellparameter, die
 feinjustiert werden können und die Prognosefähigkeit verbessern.
