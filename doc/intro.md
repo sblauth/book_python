@@ -4,6 +4,15 @@ Verfasst von [Sebastian Blauth](https://sblauth.github.io/), basierend auf dem V
 Gramsch](https://www.frankfurt-university.de/de/erweiterungen/ansprechpartner/detail/simone-gramsch-1/?no_cache=1)\
 Powered by [Jupyter Book](https://jupyterbook.org/)
 
+```{note}
+Wegen des IT-Sicherheitsvorfalls: Die Zugangsdaten für die Vorlesung finden Sie hier
+
+https://fra-uas.zoom-x.de/j/66546801546
+
+Meeting ID: 665 4680 1546
+Passcode: 243429
+```
+
 Die Digitalisierung in den Ingenieurwissenschaften nimmt immer stärker zu. Daher
 bietet dieser Python-Kurs zukünftigen Ingenieur:innen einen Einstieg in die
 grundlegenden Programmiertechniken mit Python. Jedes Kapitel entspricht dabei
