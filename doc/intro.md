@@ -11,6 +11,8 @@ https://fra-uas.zoom-x.de/j/66546801546
 
 Meeting ID: 665 4680 1546
 Passcode: 243429
+
+Sie können mich bei Fragen unter der Email-Adresse sebastian.blauth@itwm.fraunhofer.de kontaktieren.
 ```
 
 Die Digitalisierung in den Ingenieurwissenschaften nimmt immer stärker zu. Daher
