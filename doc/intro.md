@@ -20,7 +20,7 @@ Meeting ID: 665 4680 1546
 Passcode: 243429
 
 Sie können mich bei Fragen unter der Email-Adresse 
-`sebastian.blauth@itwm.fraunhofer.de <mailto:sebastian.blauth@itwm.fraunhofer.de>`_ 
+[sebastian.blauth@itwm.fraunhofer.de](mailto:sebastian.blauth@itwm.fraunhofer.de) 
 kontaktieren.
 ```
 
