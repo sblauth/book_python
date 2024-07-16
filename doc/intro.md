@@ -4,7 +4,14 @@ Verfasst von [Sebastian Blauth](https://sblauth.github.io/), basierend auf dem V
 Gramsch](https://www.frankfurt-university.de/de/erweiterungen/ansprechpartner/detail/simone-gramsch-1/?no_cache=1)\
 Powered by [Jupyter Book](https://jupyterbook.org/)
 
-```{note}
+```{important}
+Sie können die Probeklausur und die Musterlösung hier herunterladen.
+
+{download}`Download Probeklausur <./_tmp/12776e2d00f88f96d88be6f2a082889b.pdf>`
+{download}`Download Musterlösung Probeklausur <./_tmp/4b7acf5e411e09d62830f6cf07ed7557.pdf>`
+```
+
+```{important}
 Wegen des IT-Sicherheitsvorfalls: Die Zugangsdaten für die Vorlesung finden Sie hier
 
 https://fra-uas.zoom-x.de/j/66546801546
@@ -12,7 +19,9 @@ https://fra-uas.zoom-x.de/j/66546801546
 Meeting ID: 665 4680 1546
 Passcode: 243429
 
-Sie können mich bei Fragen unter der Email-Adresse sebastian.blauth@itwm.fraunhofer.de kontaktieren.
+Sie können mich bei Fragen unter der Email-Adresse 
+`sebastian.blauth@itwm.fraunhofer.de <mailto:sebastian.blauth@itwm.fraunhofer.de>`_ 
+kontaktieren.
 ```
 
 Die Digitalisierung in den Ingenieurwissenschaften nimmt immer stärker zu. Daher
