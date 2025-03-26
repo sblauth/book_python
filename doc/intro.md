@@ -7,7 +7,7 @@ Powered by [Jupyter Book](https://jupyterbook.org/)
 
 ```{important}
 Sie können mich bei Fragen unter der Email-Adresse 
-[sebastian.blauth@itwm.fraunhofer.de](mailto:sebastian.blauth@itwm.fraunhofer.de) 
+[sebastian.blauth@fb2.fra-uas.de](mailto:sebastian.blauth@fb2.fra-uas.de) 
 kontaktieren.
 ```
 
