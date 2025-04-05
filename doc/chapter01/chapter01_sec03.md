@@ -47,7 +47,7 @@ Python und seine Bibliotheken zu verwalten und zu verwenden.
 
 Hier ist eine Schritt-für-Schritt-Anleitung zum Installieren von Python mit der
 Distribution Anaconda für Windows und MacOS. Falls Sie Linux verwenden sollten, 
-folgen Sie [dieser Anleitung](https://docs.anaconda.com/free/anaconda/install/linux/).
+folgen Sie [dieser Anleitung](https://www.anaconda.com/docs/getting-started/anaconda/install).
 
 1. Öffnen Sie die offizielle Anaconda-Website unter
    https://www.anaconda.com/download/success und laden Sie die neueste
@@ -79,7 +79,7 @@ interaktiven digitalen Notizbuch zusammenzuführen. Sie sind eine der
 bekanntesten Anwendungen in der Data Science-Community und werden oft zur
 Datenanalyse, maschinellem Lernen und Visualisierung eingesetzt.
 
-Ein Jupyter Notebooks besteht aus einer Abfolge von Zellen, in denen Text, Code
+Ein Jupyter Notebook besteht aus einer Abfolge von Zellen, in denen Text, Code
 und Visualisierungen eingebettet werden. Die Zellen können entweder in der
 Programmiersprache Python oder in einer Reihe anderer Programmiersprachen wie R,
 Julia oder JavaScript geschrieben werden. Erkennbar sind Jupyter Notebooks an
@@ -153,3 +153,11 @@ Wie bei allen Clouddiensten sollte man sich jedoch eingehend mit den
 Datenschutzbestimmungen des Anbieters vertraut machen, bevor man den Dienst in
 Anspruch nimmt. Aufgrund des Datenschutzes empfehle ich stets, Python/Anaconda
 lokal zu installieren.
+
+## Vorlesungsskript über myBinder nutzen
+
+Ich habe für Sie eine myBinder Instanz des Vorlesungsskripts erstellt, welche Sie über [diesen Link](https://mybinder.org/v2/gh/sblauth/book_python/main) erreichen können.
+Dort können Sie über eine Cloud das aktuelle Notebook öffnen und haben Zugriff auf einen Python Interpreter.
+
+Ich empfehle Ihnen trotzdem dringend, dass Sie selbst eine lokale Anaconda Installation anlegen. Das macht auch das spätere bearbeiten der Übungsaufgaben viel leichter.
+

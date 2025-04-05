@@ -58,7 +58,7 @@ Beispiele für Hardware sind:
 * Ausgabegeräte wie Monitor, Display, Lautsprecher, Beamer, Drucker
 * externer Speicher: 
     * magnetische Speichermedien: Festplatte (HDD)
-    * optische Speichermedien: CD, DVD, BlueRay
+    * optische Speichermedien: CD, DVD, Blu-Ray
     * Flash-Speicher: SSD, USB-Stick, SD-Karte
 * interner Speicher: 
     * RAM (Random Access Memory: Arbeitsspeicher für den Prozessor)
@@ -149,7 +149,7 @@ Einsatz) bezeichnet. 2008 hat die Firma Apple den "iOS App Store" gegründet, um
 Anwendungssoftware für das iPhone zu vertreiben. Seitdem wird immer häufiger
 auch im deutschen Sprachraum der Name Application oder App für verwendet.
 Vielfach steht "Application" eher für PC-Anwendungssoftware und der Kurzname
-"App" für Anwendungssoftware für Tablets und Smartphones.  
+"App" für Anwendungssoftware für Tablets und Smartphones.
 
 Für Softwareentwickler sind — neben der Programmiersprache und den
 Software-Entwicklungswerkzeugen — vor allem Bibiotheken wichtig. Eine
