@@ -33,11 +33,11 @@ kernelspec:
 
 ````{admonition} Lösung
 :class: miniexercise, toggle
-Die folgenden Daten variieren natürlich je nach Datum. Das ist der Stand vom 23.04.2024: 
+Die folgenden Daten variieren natürlich je nach Datum. Das ist der Stand vom 21.04.2025: 
 ```python
 # Eingabe
-bundesliga_top3 = ['Bayer 04 Leverkusen', 'FC Bayern München', 'VfB Stuttgart']
-eintracht_frankfurt = [30, 11, 12, 7, '46:40', 6, 45]
+bundesliga_top3 = ['FC Bayern München', 'Bayer 04 Leverkusen', 'Eintracht Frankfurt']
+eintracht_frankfurt = [30, 15, 7, 8, '58:42', 16, 52]
 
 # Ausgabe
 print('TOP3 der Bundesliga:')
