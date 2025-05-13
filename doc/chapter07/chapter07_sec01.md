@@ -46,7 +46,7 @@ also:
 $$\text{Alter} < 6 \text{ oder } \text{Alter} > 14.$$
 
 Eine Fahrkarte (egal ob Kinderfahrkarte oder Erwachsenenfahrkarte) muss
-mankaufen, wenn man kein Kind ist, also wenn
+man kaufen, wenn man kein Kind ist, also wenn
 
 $$\text{nicht} \left( \text{Alter} < 6\right).$$
 
