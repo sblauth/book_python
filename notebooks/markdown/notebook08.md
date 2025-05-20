@@ -795,7 +795,7 @@ gelbe_karten_75prozent_quantil = data.loc[:, 'Yellow_Cards'].quantile(0.75)
 print(gelbe_karten_75prozent_quantil)
 ```
 
-75 % aller Spieler haben weniger als 4 gelbe Karten bekommen. SChauen wir uns
+75 % aller Spieler haben weniger als 4 gelbe Karten bekommen. Schauen wir uns
 die Gelbkarten-Spieler an. Ob da vielleicht mehrheitlich Defensivspieler dabei
 sind?
 
